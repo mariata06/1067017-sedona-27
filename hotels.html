@@ -17,14 +17,13 @@
       </ul>
     </nav>
     <div class="logo">
-      <a href="index.html"><img src="img/logo.svg" alt="Лого" width="100" height="100"></a>
+      <a href="index.html"><img src="img/main-logo.png" alt="Лого" width="140" height="71"></a>
     </div>
   </header>
   <main>
     <section class="filter">
-      <h1>фильтр и сортировка</h1>
-      <!--Позже заголовок будет скрыт-->
-      <!--
+      <h1 class="visually-hidden">фильтр и сортировка</h1>
+
       <div class="sort">
         <p><b>Инфраструктура:</b><br>
           <input type="checkbox" id="pool" name="ifrastructure" checked>
@@ -45,26 +44,42 @@
         </p>
 
         <div class="price-indicator">
+          <p><b>Стоимость в сутки (Р):</b><span>от 0</span><span>до 3000</span></p>
+          <label for="cost-per-day"><input type="range" id="cost-per-day" min="0" max="3000"></label>
+          <input type="submit" value="Показать">
+        </div>
+        <!--
           <p><b>Стоимость в сутки (Р):</b></p>
           <span>от 0</span><span>до 3000</span>
-        </div>
-
-        <p>Найдено: 3</p>
-        <p><b>Сортировка:</b></p>
-        <ul>
+          <input type="range" min="0" max="3000">
+        
+          <p>Найдено: 3</p>
+          <p><b>Сортировка:</b></p><br>
+            <ul>
           <li>По цене</li>
           <li>По типу</li>
           <li>По рейтингу</li>
         </ul>
-      </div>
-      <input type="submit" value="Показать">
       -->
+
+        <p>Найдено: 3</p>
+        <p><b>Сортировка:</b><br></p>
+        <select>
+          <option selected>По цене</option>
+        </select>
+        <select>
+          <option selected>По типу</option>
+        </select>
+        <select>
+          <option selected>По рейтингу</option>
+        </select>
+
+      </div>
     </section>
 
     <!--Список Гостиниц-->
     <section class="hotels-filtered">
-      <h2>Доступные гостиницы</h2>
-      <!--Позже заголовок будет скрыт-->
+      <h2 class="visually-hidden">Доступные гостиницы</h2>
       <ul>
         <li>
           <img src="img/Amara-Resort.jpg" alt="hotel Amara Resort & Spa" width="135" height="90">
@@ -116,20 +131,22 @@
     <p>тел:&nbsp;+7(495)&nbsp;666-02-66</p>
     <ul class="social">
       <li>
-        <a href="https://twitter.com/?lang=ru" class="social-icon">twitter</a>
-      </li>
-      <!--или svg-->
-      <li>
-        <a href="https://www.facebook.com/" class="social-icon">facebook</a>
+        <a href="https://twitter.com/" aria-label="twitter" class="social-icon"><img src="img/icon-twitter.svg"
+            alt="twitter" width="15" height="15"></a>
       </li>
       <li>
-        <a href="https://www.youtube.com/" class="social-icon">youtube</a>
+        <a href="https://facebook.com/" aria-label="facebook" class="social-icon"><img src="img/icon-fb.svg"
+            alt="facebook" width="15" height="15"></a>
+      </li>
+      <li>
+        <a href="https://youtube.com/" aria-label="youtube" class="social-icon"><img src="img/icon-youtube.svg"
+            alt="youtube" width="15" height="15"></a>
       </li>
     </ul>
     <div class="copyright">
       <p>website by</p>
-      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo.svg" alt="Лого разработчика" width="100"
-          height="100"></a>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" alt="Лого HTMLacademy"
+          width="479" height="171"></a>
     </div>
   </footer>
 </body>
