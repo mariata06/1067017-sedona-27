@@ -22,21 +22,22 @@
   </header>
   <main>
     <section class="filter">
-      <form action="url" method="post">
-        <h1 class="visually-hidden">фильтр и сортировка</h1>
+      <h1 class="visually-hidden">фильтр и сортировка</h1>
 
-        <div class="ifrastructure">
+      <form action="https://echo.htmlacademy.ru" method="post">
+
+        <fieldset class="infrastructure">
           <p><b>Инфраструктура:</b><br>
-            <input type="checkbox" id="pool" name="ifrastructure" checked>
+            <input type="checkbox" id="pool" name="infrastructure" checked>
             <label for="pool">Бассейн</label><br>
-            <input type="checkbox" id="parking" name="ifrastructure">
+            <input type="checkbox" id="parking" name="infrastructure">
             <label for="parking">Парковка</label><br>
-            <input type="checkbox" id="wifi" name="ifrastructure">
+            <input type="checkbox" id="wifi" name="infrastructure">
             <label for="wifi">Wi-Fi</label><br>
           </p>
-        </div>
+        </fieldset>
 
-        <div class="housing-type">
+        <fieldset class="housing-type">
           <p><b>Тип жилья:</b><br>
             <input type="checkbox" id="hotel" name="housing type" checked>
             <label for="hotel">Гостиница</label><br>
@@ -45,13 +46,13 @@
             <input type="checkbox" id="appartements" name="housing type" checked>
             <label for="appartements">Аппартаменты</label><br>
           </p>
-        </div>
+        </fieldset>
 
-        <div class="price-indicator">
+        <fieldset class="price-indicator">
           <label for="cost-per-day"><b>Стоимость в сутки (Р):</b><br>от<span class="min-price">0</span>до<span
               class="max-price">3000</span>
             <input type="range" min="0" max="3000" step="100" id="cost-per-day"></label>
-        </div>
+        </fieldset>
 
         <button type="submit">Найти</button>
 
@@ -66,6 +67,8 @@
         <li><a href="#">По типу</a></li>
         <li><a href="#">По рейтингу</a></li>
       </ul>
+      <img src="img/icon-up-dir.svg" alt="по возрастанию" width="11" height="10">
+      <img src="img/icon-down-dir.svg" alt="по убыванию" width="11" height="10">
     </div>
 
     <!--Список Гостиниц-->
