@@ -27,41 +27,39 @@
       <form action="https://echo.htmlacademy.ru" method="post">
 
         <fieldset class="infrastructure">
-          <p><b>Инфраструктура:</b><br>
-            <input type="checkbox" id="pool" name="infrastructure" checked>
-            <label for="pool">Бассейн</label><br>
-            <input type="checkbox" id="parking" name="infrastructure">
-            <label for="parking">Парковка</label><br>
-            <input type="checkbox" id="wifi" name="infrastructure">
-            <label for="wifi">Wi-Fi</label><br>
-          </p>
+          <legend>Инфраструктура:</legend>
+          <input type="checkbox" id="pool" name="infrastructure" checked>
+          <label for="pool">Бассейн</label>
+          <input type="checkbox" id="parking" name="infrastructure">
+          <label for="parking">Парковка</label>
+          <input type="checkbox" id="wifi" name="infrastructure">
+          <label for="wifi">Wi-Fi</label>
         </fieldset>
 
         <fieldset class="housing-type">
-          <p><b>Тип жилья:</b><br>
-            <input type="checkbox" id="hotel" name="housing type" checked>
-            <label for="hotel">Гостиница</label><br>
-            <input type="checkbox" id="motel" name="housing type" checked>
-            <label for="motel">Мотель</label><br>
-            <input type="checkbox" id="appartements" name="housing type" checked>
-            <label for="appartements">Аппартаменты</label><br>
-          </p>
+          <legend>Тип жилья:</legend>
+          <input type="checkbox" id="hotel" name="housing type" checked>
+          <label for="hotel">Гостиница</label>
+          <input type="checkbox" id="motel" name="housing type" checked>
+          <label for="motel">Мотель</label>
+          <input type="checkbox" id="appartements" name="housing type" checked>
+          <label for="appartements">Аппартаменты</label>
         </fieldset>
 
         <fieldset class="price-indicator">
-          <label for="cost-per-day"><b>Стоимость в сутки (Р):</b><br>от<span class="min-price">0</span>до<span
-              class="max-price">3000</span>
-            <input type="range" min="0" max="3000" step="100" id="cost-per-day"></label>
+          <legend><label for="cost-per-day">Стоимость в сутки (Р):</label></legend>
+          от<span class="min-price">0</span>до<span class="max-price">3000</span>
+          <input type="range" min="0" max="3000" step="100" id="cost-per-day">
         </fieldset>
 
-        <button type="submit">Найти</button>
+        <button type="submit">Показать</button>
 
       </form>
     </section>
 
     <div class="sort">
       <p>Найдено: 3</p>
-      <p><b>Сортировка:</b></p>
+      <p>Сортировка:</p>
       <ul>
         <li><a href="#">По цене</a></li>
         <li><a href="#">По типу</a></li>
@@ -87,7 +85,7 @@
             <svg class="icon-star">........</svg>
             <svg class="icon-star">........</svg>
             <svg class="icon-star">........</svg>-->
-          <p class="rating">Рейтинг: 8,5</p>
+          <span class="rating">Рейтинг: 8,5</span>
         </li>
 
         <li>
@@ -101,7 +99,7 @@
             <svg class="icon-star">........</svg>
             <svg class="icon-star">........</svg>
             <svg class="icon-star">........</svg>-->
-          <p class="rating">Рейтинг: 8,9</p>
+          <span class="rating">Рейтинг: 8,9</span>
         </li>
 
         <li>
@@ -114,7 +112,7 @@
           <!--
             <svg class="icon-star">........</svg>
             <svg class="icon-star">........</svg>-->
-          <p class="rating">Рейтинг: 9,2</p>
+          <span class="rating">Рейтинг: 9,2</span>
         </li>
       </ul>
     </section>
