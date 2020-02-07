@@ -4,12 +4,15 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
+    <nav class="main-navigation">
+      <ul class="site-navigation">
         <li><a href="#">Информация</a></li>
         <li><a href="#">Фото и видео</a></li>
         <li><a href="#">Карта штата</a></li>
@@ -22,7 +25,7 @@
   </header>
   <main>
     <section class="intro">
-      <h1>Welcome to the gorgeous Sedona</h1>
+      <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
       <!--Заголовок позже будет скрыт-->
       <img src="img/site-name.png" alt="Официальный сайт города Седона" width="459" height="353">
       <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -136,9 +139,9 @@
   </main>
 
   <footer>
-    <p>#visitsedona</p>
-    <p>тел:&nbsp;+7(495)&nbsp;666-02-66</p>
-    <ul class="social">
+    <p class="hashtag">#visitsedona</p>
+    <p class="tel">тел:&nbsp;+7(495)&nbsp;666-02-66</p>
+    <ul class="social-list">
       <li>
         <a href="https://twitter.com/" aria-label="twitter" class="social-icon"><img src="img/icon-twitter.svg"
             alt="twitter" width="17" height="15"></a>
@@ -156,7 +159,7 @@
     <div class="copyright">
       <p>website by</p>
       <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/footer-logo.svg" alt="Лого HTMLacademy"
-          width="115" height="41"></a>
+          width="115" height="41" class="footer-logo"></a>
     </div>
   </footer>
 </body>

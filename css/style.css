@@ -1,0 +1,234 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 400;
+  text-transform: uppercase;
+  /*fontsize + (leading / 2) = lineheight = 16 + 22/2 = 27*/
+  font-weight: 400;
+  color: #333333;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+button {
+  font-size: 21px;
+  line-height: 34px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  text-transform: uppercase;
+}
+
+.main-navigation {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 27px;
+  color: #000000;
+}
+
+.site-navigation,
+.social-list,
+.sort-list,
+.hotels-list {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:link {
+  color: #b7b7b7;
+}
+
+.site-navigation a:active {
+  color: #766357;
+}
+
+.sort-list a {
+  color: #766357;
+}
+
+.hotels-list.booking-details,
+.hotels-list.start-booking {
+  color: #ffffff;
+}
+
+/*****************************************************************************
+******************************SECTION INTRO***********************************
+*****************************************************************************/
+.intro {
+  background-image: url("../img/intro-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.intro h2 {
+  color: #000000;
+  font-size: 21px;
+  line-height: 34px;
+  font-weight: 700;
+}
+
+/*****************************************************************************
+******************************SECTION BOOKING*********************************
+*****************************************************************************/
+.booking h2 {
+  color: #000000;
+  font-size: 30px;
+  line-height: 36px;
+  /*если line-height 1.2 => 1.2*30=36px*/
+  font-weight: 700;
+}
+
+/*Коричневая кнопка*/
+.booking button {
+  background-color: #766357;
+  width: 568px;
+  height: 86px;
+}
+
+.booking button:hover,
+.booking button:focus {
+  background-color: #604e43;
+}
+
+.booking button:active {
+  color: #625248;
+  background-color: #503e33;
+}
+
+/*****************************************************************************
+************************************FOOTER************************************
+*****************************************************************************/
+.hashtag,
+.tel {
+  font-size: 21px;
+  line-height: 34;
+  font-weight: 700;
+  color: #000000;
+}
+
+.social-icon {
+  display: flex;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background-color: #669ec0;
+}
+
+.social-icon:active {
+  background-color: #5496bd;
+}
+
+/*не работает*/
+.social-icon:active img {
+  color: #88b6d1;
+  fill: #88b6d1;
+}
+
+.copyright p {
+  font-size: 14px;
+  line-height: 27;
+  font-weight: 400;
+  color: #000000;
+}
+
+.copyright.footer-logo {
+  color: #000000;
+}
+
+/*****************************************************************************
+************************************HOTELS PAGE*******************************
+*****************************************************************************/
+
+
+
+
+/*****************************************************************************
+**************************SECTION HOTELS FILTERED*****************************
+*****************************************************************************/
+.hotel-name {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 34;
+  color: #000000;
+}
+
+.booking-details,
+.start-booking {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24.5px;
+  color: #ffffff;
+  height: 26px;
+  text-align: center;
+
+
+}
+
+.booking-details {
+  width: 110px;
+  background: #81b3d2;
+}
+
+.booking-details:hover,
+.booking-details:focus {
+  background: #669ec0;
+}
+
+.booking-details:active {
+  color: #88b6d1;
+  background: #5496bd;
+}
+
+.start-booking {
+  width: 142px;
+  background: #766357;
+}
+
+.start-booking:hover,
+.start-booking:focus {
+  background: #604e43;
+}
+
+.start-booking:active {
+  color: #857871;
+  background: #503e33;
+}
+
+.menu-sort a {
+  color: #000000;
+}
+
+.rating {
+  display: block;
+  width: 110px;
+  height: 27px;
+  background-color: #f2f2f2;
+  text-align: center;
+}
