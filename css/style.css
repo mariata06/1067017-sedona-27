@@ -5,37 +5,31 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 27px;
-  font-weight: 400;
-  text-transform: uppercase;
   /*fontsize + (leading / 2) = lineheight = 16 + 22/2 = 27*/
   font-weight: 400;
-  color: #333333;
-
-  background-color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #f2f2f2;
 }
 
 a {
   text-decoration: none;
 }
 
+/*
 .visually-hidden {
   display: none;
 }
-
-button {
+*/
+.button {
   font-size: 21px;
   line-height: 34px;
-  font-weight: bold;
-  color: #ffffff;
-  border: none;
-  text-transform: uppercase;
-}
-
-.main-navigation {
-  font-size: 14px;
   font-weight: 700;
-  line-height: 27px;
-  color: #000000;
+  color: #ffffff;
+  border: 0;
+  border-width: 0px;
+  text-transform: uppercase;
 }
 
 .site-navigation,
@@ -43,6 +37,17 @@ button {
 .sort-list,
 .hotels-list {
   list-style: none;
+}
+
+/*****************************************************************************
+************************************HEADER************************************
+*****************************************************************************/
+.main-navigation li {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 27px;
+  /*color: #000000;*/
+  background-color: #ffffff;
 }
 
 .site-navigation a {
@@ -54,21 +59,12 @@ button {
   color: #81b3d2;
 }
 
-.site-navigation a:link {
-  color: #b7b7b7;
-}
-
 .site-navigation a:active {
-  color: #766357;
+  color: #b2b2b2;
 }
 
-.sort-list a {
+.site-navigation .active {
   color: #766357;
-}
-
-.hotels-list.booking-details,
-.hotels-list.start-booking {
-  color: #ffffff;
 }
 
 /*****************************************************************************
@@ -88,8 +84,64 @@ button {
 }
 
 /*****************************************************************************
+******************************SECTION ABOUT***********************************
+*****************************************************************************/
+.about .housing {
+  background-image: url("../img/icon-housing.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.about .meal {
+  background-image: url("../img/icon-burger.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.about .souvenirs {
+  background-image: url("../img/icon-gift.svg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+
+
+.feature h2 {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 31.5px;
+}
+
+.feature:first-child h2,
+.feature:nth-of-type(5) h2 {
+  color: #ffffff;
+}
+
+.feature:first-child,
+.feature:nth-of-type(5) {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.feature:nth-of-type(2),
+.feature:nth-of-type(3),
+.feature:nth-of-type(4) {
+  background-color: #ffffff;
+}
+
+.feature:nth-of-type(6),
+.feature:nth-of-type(7),
+.feature:nth-of-type(8) {
+  background-color: #eeeeee;
+}
+
+/*****************************************************************************
 ******************************SECTION BOOKING*********************************
 *****************************************************************************/
+.booking {
+  background-color: #ffffff;
+}
+
 .booking h2 {
   color: #000000;
   font-size: 30px;
@@ -98,30 +150,127 @@ button {
   font-weight: 700;
 }
 
+.booking p {
+  line-height: 26px;
+}
+
 /*Коричневая кнопка*/
-.booking button {
+.booking .button {
   background-color: #766357;
   width: 568px;
   height: 86px;
 }
 
-.booking button:hover,
-.booking button:focus {
+.booking .button:hover,
+.booking .button:focus {
   background-color: #604e43;
 }
 
-.booking button:active {
+.booking .button:active {
   color: #625248;
   background-color: #503e33;
+}
+
+.booking label {
+  font-weight: 700;
+  background-color: #ffffff;
+}
+
+.booking input[type=text],
+.booking input::placeholder,
+.booking input[type=number] {
+  color: #000000;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  border: transparent;
+}
+
+.booking input[type=text]:hover,
+.booking input::placeholder:hover,
+.booking input[type=number]:hover {
+  background-color: #ebebeb;
+}
+
+.booking input[type=text]:focus,
+.booking input::placeholder:focus,
+.booking input[type=number]:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.booking input[type=text],
+.booking input::placeholder {
+  width: 346px;
+  height: 38px;
+  border: none;
+}
+
+.booking input[type=number] {
+  width: 114px;
+  height: 38px;
+  text-align: center;
+}
+
+.booking .button-minus::after {
+  content: "-";
+}
+
+.booking .button-plus::after {
+  content: "+";
+}
+
+.booking .button-minus::after,
+.booking .button-plus::after {
+  width: 11px;
+  height: 11px;
+  font-weight: 700;
+  color: #a9a9a9;
+}
+
+.booking .button-minus::after:hover,
+.booking .button-plus::after:hover {
+  color: #000000;
+}
+
+.booking .button-minus::after:active,
+.booking .button-plus::after:active {
+  color: #81b3d2;
+}
+
+/*
+.booking button[type=button] {
+  display: none;
+}
+*/
+.hotel-search .button {
+  width: 458px;
+  height: 60px;
+  background-color: #81b3d2;
+}
+
+.hotel-search svg {
+  fill: #a9a9a9;
+}
+
+.hotel-search svg:hover {
+  fill: #000000;
+}
+
+.hotel-search svg:active {
+  fill: #81b3d2;
 }
 
 /*****************************************************************************
 ************************************FOOTER************************************
 *****************************************************************************/
-.hashtag,
-.tel {
+footer {
+  background-color: #fefefe;
+}
+
+footer .hashtag,
+footer .tel {
   font-size: 21px;
-  line-height: 34;
+  line-height: 34px;
   font-weight: 700;
   color: #000000;
 }
@@ -130,6 +279,7 @@ button {
   display: flex;
   width: 46px;
   height: 48px;
+  fill: #ffffff;
   background-color: #81b3d2;
   align-items: center;
   justify-content: center;
@@ -141,54 +291,147 @@ button {
 }
 
 .social-icon:active {
+  fill: #88b6d1;
   background-color: #5496bd;
 }
 
-/*не работает*/
-.social-icon:active img {
-  color: #88b6d1;
-  fill: #88b6d1;
+.copyright svg:hover {
+  fill: #81b3d2;
 }
 
-.copyright p {
-  font-size: 14px;
-  line-height: 27;
-  font-weight: 400;
-  color: #000000;
-}
-
-.copyright.footer-logo {
-  color: #000000;
+.copyright svg:active {
+  fill: #bdbbbc;
 }
 
 /*****************************************************************************
 ************************************HOTELS PAGE*******************************
 *****************************************************************************/
 
+/*****************************************************************************
+*********************************SECTION FILTER*******************************
+*****************************************************************************/
+.filter {
+  background-image: url("../img/filter-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  line-height: 24.5px;
+}
 
+.filter legend {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26.5px;
+}
 
+.checkbox,
+.checkbox:hover {
+  fill: #ffffff;
+}
+
+.filter .button {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24.5px;
+  width: 133px;
+  height: 32px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.filter .button:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*****************************************************************************
+**********************************SECTION SORT********************************
+*****************************************************************************/
+.sort p:first-child {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 34px;
+}
+
+.sort .label-sort,
+.sort-list li {
+  font-size: 12px;
+  line-height: 21px;
+}
+
+.sort-list a {
+  color: #cacaca;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: #81b3d2;
+}
+
+.sort-list a:hover {
+  color: #81b3d2;
+}
+
+.sort-list a:active {
+  color: #000000;
+  text-decoration: none;
+}
+
+.sort-list .current {
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+.sort svg {
+  fill: #cacaca;
+}
+
+.sort svg:hover {
+  fill: #231f20;
+}
+
+.sort svg:active {
+  fill: #81b3d2;
+}
 
 /*****************************************************************************
 **************************SECTION HOTELS FILTERED*****************************
 *****************************************************************************/
+.hotels-filtered {
+  background-color: #fefefe;
+}
+
 .hotel-name {
   font-size: 21px;
   font-weight: 700;
-  line-height: 34;
+  line-height: 34px;
   color: #000000;
+}
+
+.hotel-name:hover {
+  color: #81b3d2;
+}
+
+.hotel-name:active {
+  color: #b2b2b2;
+}
+
+.housing-type,
+.booking-price {
+  line-height: 24.5px;
 }
 
 .booking-details,
 .start-booking {
   display: block;
-  font-size: 14px;
   font-weight: 700;
   line-height: 24.5px;
   color: #ffffff;
   height: 26px;
   text-align: center;
+}
 
-
+.hotels-list.booking-details,
+.hotels-list.start-booking {
+  color: #ffffff;
 }
 
 .booking-details {
@@ -221,14 +464,15 @@ button {
   background: #503e33;
 }
 
-.menu-sort a {
-  color: #000000;
-}
-
 .rating {
   display: block;
+  align-self: start;
   width: 110px;
   height: 27px;
+  height: 24.5px;
   background-color: #f2f2f2;
   text-align: center;
+}
+.hotels-filtered .icon-star:after {
+  content: url("../img/icon-star.svg");
 }
