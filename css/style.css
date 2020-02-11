@@ -27,8 +27,7 @@ body {
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 27px;
-  /*fontsize + (leading / 2) = lineheight = 16 + 22/2 = 27*/
+  line-height: 21px;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -40,14 +39,9 @@ a {
   text-decoration: none;
 }
 
-/*
-.visually-hidden {
-  display: none;
-}
-*/
 .button {
   font-size: 21px;
-  line-height: 34px;
+  line-height: 26px;
   font-weight: 700;
   color: #ffffff;
   border: 0;
@@ -68,7 +62,7 @@ a {
 .main-navigation li {
   font-size: 14px;
   font-weight: 700;
-  line-height: 27px;
+  line-height: 21px;
   background-color: #ffffff;
 }
 
@@ -101,7 +95,7 @@ a {
 
 .intro h2 {
   font-size: 21px;
-  line-height: 34px;
+  line-height: 26px;
   font-weight: 700;
 }
 
@@ -131,7 +125,7 @@ a {
 .feature h2 {
   font-size: 21px;
   font-weight: 700;
-  line-height: 31.5px;
+  line-height: 21px;
 }
 
 .feature:first-child h2,
@@ -167,12 +161,11 @@ a {
 .booking h2 {
   font-size: 30px;
   line-height: 36px;
-  /*если line-height 1.2 => 1.2*30=36px*/
   font-weight: 700;
 }
 
 .booking p {
-  line-height: 26px;
+  line-height: 24px;
 }
 
 .booking .search-button {
@@ -284,7 +277,7 @@ footer {
 footer .hashtag,
 footer .tel {
   font-size: 21px;
-  line-height: 34px;
+  line-height: 26px;
   font-weight: 700;
   color: #000000;
 }
@@ -330,19 +323,19 @@ footer .tel {
   background-position: top center;
   background-repeat: no-repeat;
   color: #ffffff;
-  line-height: 24.5px;
+  line-height: 21px;
 }
 
 .filter legend {
   font-size: 16px;
   font-weight: 700;
-  line-height: 26.5px;
+  line-height: 21px;
 }
 
 .filter .filter-button {
   font-size: 14px;
   font-weight: 400;
-  line-height: 24.5px;
+  line-height: 21px;
   background-color: transparent;
   border: 2px solid #ffffff;
 }
@@ -367,7 +360,7 @@ footer .tel {
 .sort .label-sort,
 .sort-list li {
   font-size: 12px;
-  line-height: 21px;
+  line-height: 18px;
 }
 
 .sort-list a {
@@ -413,7 +406,7 @@ footer .tel {
 .hotel-name {
   font-size: 21px;
   font-weight: 700;
-  line-height: 34px;
+  line-height: 26px;
   color: #000000;
 }
 
@@ -427,16 +420,15 @@ footer .tel {
 
 .housing-type,
 .booking-price {
-  line-height: 24.5px;
+  line-height: 21px;
 }
 
 .booking-details-button,
 .start-booking-button {
   display: block;
   font-weight: 700;
-  line-height: 24.5px;
+  line-height: 21px;
   color: #ffffff;
-  height: 26px;
   text-align: center;
 }
 
