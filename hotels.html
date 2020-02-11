@@ -32,60 +32,25 @@
         <fieldset class="infrastructure">
           <legend>Инфраструктура:</legend>
           <input type="checkbox" id="pool" name="infrastructure" checked class="visually-hidden">
-          <div class="checkbox">
-            <svg width="27px" height="23px" viewBox="0 0 27 23">
-              <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		" />
-              <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-                H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z" />
-            </svg>
-          </div>
           <label for="pool">Бассейн</label>
+
           <input type="checkbox" id="parking" name="infrastructure" class="visually-hidden">
-          <div class="checkbox">
-            <svg width="23px" height="23px" viewBox="0 0 23 23">
-              <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-              C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z" />
-            </svg>
-          </div>
           <label for="parking">Парковка</label>
+
           <input type="checkbox" id="wifi" name="infrastructure" class="visually-hidden">
-          <div class="checkbox">
-            <svg width="23px" height="23px" viewBox="0 0 23 23">
-              <path d="M20,2c0.542,0,1,0.458,1,1v17c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1H20 M20,0H3
-                C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3V3C23,1.35,21.65,0,20,0L20,0z" />
-            </svg>
-          </div>
           <label for="wifi">Wi-Fi</label>
+
         </fieldset>
 
         <fieldset class="housing-type">
           <legend>Тип жилья:</legend>
           <input type="checkbox" id="hotel" name="housing type" checked class="visually-hidden">
-          <div class="checkbox">
-            <svg width="27px" height="23px" viewBox="0 0 27 23">
-              <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		" />
-              <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-                H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z" />
-            </svg>
-          </div>
           <label for="hotel">Гостиница</label>
+
           <input type="checkbox" id="motel" name="housing type" checked class="visually-hidden">
-          <div class="checkbox">
-            <svg width="27px" height="23px" viewBox="0 0 27 23">
-              <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		" />
-              <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-                H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z" />
-            </svg>
-          </div>
           <label for="motel">Мотель</label>
+
           <input type="checkbox" id="appartements" name="housing type" checked class="visually-hidden">
-          <div class="checkbox">
-            <svg width="27px" height="23px" viewBox="0 0 27 23">
-              <polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		" />
-              <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
-                H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z" />
-            </svg>
-          </div>
           <label for="appartements">Аппартаменты</label>
         </fieldset>
 
@@ -95,7 +60,7 @@
           <input type="range" min="0" max="3000" step="100" id="cost-per-day">
         </fieldset>
 
-        <button type="submit" class="button">Показать</button>
+        <button type="submit" class="button filter-button">Показать</button>
 
       </form>
     </section>
@@ -125,17 +90,8 @@
           <h3 class="hotel-name">Amara Resort & Spa</h3>
           <p class="housing-type">Гостиница</p>
           <span class="booking-price">От 4000 Р.</span>
-          <a href="#" class="booking-details">Подробнее</a>
-          <a href="#" class="start-booking">Забронировать</a>
-
-          <div class="icon-star-container">
-            <span class="icon-star"></span>
-            <span class="icon-star"></span>
-            <span class="icon-star"></span>
-            <span class="icon-star"></span>
-            <span class="icon-star"></span>
-          </div>
-
+          <a href="#" class="booking-details-button">Подробнее</a>
+          <a href="#" class="start-booking-button">Забронировать</a>
           <span class="rating">Рейтинг: 8,5</span>
         </li>
 
@@ -144,13 +100,8 @@
           <h3 class="hotel-name">Desert Quail Inn</h3>
           <p class="housing-type">Мотель</p>
           <span class="booking-price">От 3000 Р.</span>
-          <a href="#" class="booking-details">Подробнее</a>
-          <a href="#" class="start-booking">Забронировать</a>
-          <div class="icon-star-container">
-            <span class="icon-star"></span>
-            <span class="icon-star"></span>
-            <span class="icon-star"></span>
-          </div>
+          <a href="#" class="booking-details-button">Подробнее</a>
+          <a href="#" class="start-booking-button">Забронировать</a>
           <span class="rating">Рейтинг: 8,9</span>
         </li>
 
@@ -159,12 +110,8 @@
           <h3 class="hotel-name">Villas at Poco Diablo</h3>
           <p class="housing-type">Аппартаменты</p>
           <span class="booking-price">От 2000 Р.</span>
-          <a href="#" class="booking-details">Подробнее</a>
-          <a href="#" class="start-booking">Забронировать</a>
-          <span class="icon-star-container">
-            <span class="icon-star"></span>
-            <span class="icon-star"></span>
-          </span>
+          <a href="#" class="booking-details-button">Подробнее</a>
+          <a href="#" class="start-booking-button">Забронировать</a>
           <span class="rating">Рейтинг: 9,2</span>
         </li>
       </ul>

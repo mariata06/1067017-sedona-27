@@ -1,3 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/*
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+*/
+
 body {
   margin: 0;
   padding: 0;
@@ -46,7 +69,6 @@ a {
   font-size: 14px;
   font-weight: 700;
   line-height: 27px;
-  /*color: #000000;*/
   background-color: #ffffff;
 }
 
@@ -71,13 +93,13 @@ a {
 ******************************SECTION INTRO***********************************
 *****************************************************************************/
 .intro {
+  background-color: #c66b57;
   background-image: url("../img/intro-bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
 
 .intro h2 {
-  color: #000000;
   font-size: 21px;
   line-height: 34px;
   font-weight: 700;
@@ -143,7 +165,6 @@ a {
 }
 
 .booking h2 {
-  color: #000000;
   font-size: 30px;
   line-height: 36px;
   /*если line-height 1.2 => 1.2*30=36px*/
@@ -154,109 +175,101 @@ a {
   line-height: 26px;
 }
 
-/*Коричневая кнопка*/
-.booking .button {
+.booking .search-button {
   background-color: #766357;
-  width: 568px;
-  height: 86px;
+
 }
 
-.booking .button:hover,
-.booking .button:focus {
+.booking .search-button:hover,
+.booking .search-button:focus {
   background-color: #604e43;
 }
 
-.booking .button:active {
+.booking .search-button:active {
   color: #625248;
   background-color: #503e33;
 }
-
-.booking label {
-  font-weight: 700;
+.search-form {
   background-color: #ffffff;
 }
+.search-form label {
+  font-weight: 700;
+}
 
-.booking input[type=text],
-.booking input::placeholder,
-.booking input[type=number] {
+.search-form input[type=text],
+.search-form input::placeholder,
+.search-form input[type=number] {
   color: #000000;
   font-weight: 700;
   background-color: #f2f2f2;
   border: transparent;
 }
 
-.booking input[type=text]:hover,
-.booking input::placeholder:hover,
-.booking input[type=number]:hover {
+.search-form input:hover[type=text],
+.search-form input:hover::placeholder,
+.search-form input:hover[type=number] {
   background-color: #ebebeb;
 }
 
-.booking input[type=text]:focus,
-.booking input::placeholder:focus,
-.booking input[type=number]:focus {
+.search-form input:focus[type=text],
+.search-form input:focus::placeholder,
+.search-form input:focus[type=number] {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
-.booking input[type=text],
-.booking input::placeholder {
+.search-form input[type=text],
+.search-form input::placeholder {
   width: 346px;
   height: 38px;
   border: none;
 }
 
-.booking input[type=number] {
+.search-form input[type=number] {
   width: 114px;
   height: 38px;
   text-align: center;
 }
 
-.booking .button-minus::after {
+.search-form .button-minus::after {
   content: "-";
 }
 
-.booking .button-plus::after {
+.search-form .button-plus::after {
   content: "+";
 }
 
-.booking .button-minus::after,
-.booking .button-plus::after {
+.search-form .button-minus::after,
+.search-form .button-plus::after {
   width: 11px;
   height: 11px;
   font-weight: 700;
   color: #a9a9a9;
 }
 
-.booking .button-minus::after:hover,
-.booking .button-plus::after:hover {
+.search-form .button-minus:hover::after,
+.search-form .button-plus:hover::after {
   color: #000000;
 }
 
-.booking .button-minus::after:active,
-.booking .button-plus::after:active {
+.search-form .button-minus:active::after,
+.search-form .button-plus:active::after {
   color: #81b3d2;
 }
 
-/*
-.booking button[type=button] {
-  display: none;
-}
-*/
-.hotel-search .button {
-  width: 458px;
-  height: 60px;
+.search-form .button {
   background-color: #81b3d2;
 }
 
-.hotel-search svg {
+.search-form svg {
   fill: #a9a9a9;
 }
 
-.hotel-search svg:hover {
+.search-form svg:hover {
   fill: #000000;
 }
 
-.hotel-search svg:active {
+.search-form svg:active {
   fill: #81b3d2;
 }
 
@@ -264,7 +277,8 @@ a {
 ************************************FOOTER************************************
 *****************************************************************************/
 footer {
-  background-color: #fefefe;
+  background-color: #ffffff;
+  opacity: 0.902;
 }
 
 footer .hashtag,
@@ -311,6 +325,7 @@ footer .tel {
 *********************************SECTION FILTER*******************************
 *****************************************************************************/
 .filter {
+  background-color: #81b3d2;
   background-image: url("../img/filter-bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -324,22 +339,15 @@ footer .tel {
   line-height: 26.5px;
 }
 
-.checkbox,
-.checkbox:hover {
-  fill: #ffffff;
-}
-
-.filter .button {
+.filter .filter-button {
   font-size: 14px;
   font-weight: 400;
   line-height: 24.5px;
-  width: 133px;
-  height: 32px;
   background-color: transparent;
   border: 2px solid #ffffff;
 }
 
-.filter .button:hover {
+.filter .filter-button:hover {
   color: #000000;
   background-color: #ffffff;
 }
@@ -347,6 +355,9 @@ footer .tel {
 /*****************************************************************************
 **********************************SECTION SORT********************************
 *****************************************************************************/
+.sort {
+  background-color: #ffffff;
+}
 .sort p:first-child {
   font-size: 21px;
   font-weight: 700;
@@ -419,8 +430,8 @@ footer .tel {
   line-height: 24.5px;
 }
 
-.booking-details,
-.start-booking {
+.booking-details-button,
+.start-booking-button {
   display: block;
   font-weight: 700;
   line-height: 24.5px;
@@ -429,37 +440,35 @@ footer .tel {
   text-align: center;
 }
 
-.hotels-list.booking-details,
-.hotels-list.start-booking {
+.hotels-list.booking-details-button,
+.hotels-list.start-booking-button {
   color: #ffffff;
 }
 
-.booking-details {
-  width: 110px;
+.booking-details-button {
   background: #81b3d2;
 }
 
-.booking-details:hover,
-.booking-details:focus {
+.booking-details-button:hover,
+.booking-details-button:focus {
   background: #669ec0;
 }
 
-.booking-details:active {
+.booking-details-button:active {
   color: #88b6d1;
   background: #5496bd;
 }
 
-.start-booking {
-  width: 142px;
+.start-booking-button {
   background: #766357;
 }
 
-.start-booking:hover,
-.start-booking:focus {
+.start-booking-button:hover,
+.start-booking-button:focus {
   background: #604e43;
 }
 
-.start-booking:active {
+.start-booking-button:active {
   color: #857871;
   background: #503e33;
 }
@@ -473,6 +482,7 @@ footer .tel {
   background-color: #f2f2f2;
   text-align: center;
 }
+
 .hotels-filtered .icon-star:after {
   content: url("../img/icon-star.svg");
 }
