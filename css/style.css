@@ -59,11 +59,32 @@ a {
 /*****************************************************************************
 ************************************HEADER************************************
 *****************************************************************************/
-.main-navigation li {
+header {
+  width: 1200px;
+  /*временно для сетки*/
+  height: 56px;
+  margin: 0 auto;
+  background-color: tomato;
+}
+
+.site-navigation {
+  width: 1060px;
+  /*временно для сетки*/
+  height: 56px;
+  display: flex;
+  background-color: gold;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 0px;
+  align-items: center;
+}
+
+.site-navigation li {
   font-size: 14px;
   font-weight: 700;
   line-height: 21px;
   background-color: #ffffff;
+  display: inline-block;
 }
 
 .site-navigation a {
@@ -104,23 +125,21 @@ a {
 *****************************************************************************/
 .about .housing {
   background-image: url("../img/icon-housing.svg");
-  background-position: top center;
+  background-position: center 60px;
   background-repeat: no-repeat;
 }
 
 .about .meal {
   background-image: url("../img/icon-burger.svg");
-  background-position: top center;
+  background-position: center 60px;
   background-repeat: no-repeat;
 }
 
 .about .souvenirs {
   background-image: url("../img/icon-gift.svg");
-  background-position: top center;
+  background-position: center 60px;
   background-repeat: no-repeat;
 }
-
-
 
 .feature h2 {
   font-size: 21px;
@@ -128,27 +147,51 @@ a {
   line-height: 21px;
 }
 
-.feature:first-child h2,
-.feature:nth-of-type(5) h2 {
-  color: #ffffff;
-}
-
-.feature:first-child,
-.feature:nth-of-type(5) {
+.feature-wrapper1 .feature,
+.feature-wrapper3 .feature {
   color: #ffffff;
   background-color: #81b3d2;
 }
 
-.feature:nth-of-type(2),
-.feature:nth-of-type(3),
-.feature:nth-of-type(4) {
+.feature-wrapper2 .feature {
   background-color: #ffffff;
 }
 
-.feature:nth-of-type(6),
-.feature:nth-of-type(7),
-.feature:nth-of-type(8) {
+.feature-wrapper4 .feature {
   background-color: #eeeeee;
+}
+
+.about {
+  width: 1200px;
+  /*временно для сетки*/
+  margin: 0 auto;
+}
+
+.feature-wrapper1,
+.feature-wrapper2,
+.feature-wrapper3,
+.feature-wrapper4 {
+  width: 1200px;
+  /*временно для сетки*/
+  display: flex;
+  background-color: lightgreen;
+  /*временно для сетки*/
+}
+
+.feature-wrapper3 {
+  flex-flow: row-reverse;
+}
+
+.feature-wrapper3 .feature {
+  order: -1;
+}
+
+.feature {
+  display: inline-block;
+  height: 255px;
+  /*временно для сетки*/
+  width: 380px;
+  /*временно для сетки*/
 }
 
 /*****************************************************************************
@@ -170,7 +213,6 @@ a {
 
 .booking .search-button {
   background-color: #766357;
-
 }
 
 .booking .search-button:hover,
@@ -182,9 +224,16 @@ a {
   color: #625248;
   background-color: #503e33;
 }
+
 .search-form {
+  width: 570px;
+  /*временно для сетки*/
   background-color: #ffffff;
+  padding-left: 55px;
+  padding-right: 55px;
+  margin: 0 auto;
 }
+
 .search-form label {
   font-weight: 700;
 }
@@ -196,6 +245,7 @@ a {
   font-weight: 700;
   background-color: #f2f2f2;
   border: transparent;
+  display: inline-block;
 }
 
 .search-form input:hover[type=text],
@@ -272,6 +322,18 @@ a {
 footer {
   background-color: #ffffff;
   opacity: 0.902;
+  display: flex;
+  width: 1200px;
+  /*временно для сетки*/
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-wrapper1,
+.social-list,
+.copyright {
+  display: inline;
 }
 
 footer .hashtag,
@@ -282,14 +344,18 @@ footer .tel {
   color: #000000;
 }
 
-.social-icon {
+.social-list {
+  width: 150px;
   display: flex;
+  justify-content: space-between;
+}
+
+.social-icon {
+  display: inline-block;
   width: 46px;
   height: 48px;
   fill: #ffffff;
   background-color: #81b3d2;
-  align-items: center;
-  justify-content: center;
 }
 
 .social-icon:hover,
@@ -302,11 +368,20 @@ footer .tel {
   background-color: #5496bd;
 }
 
-.copyright svg:hover {
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright p {
+  display: inline-block;
+}
+
+.copyright a:hover {
   fill: #81b3d2;
 }
 
-.copyright svg:active {
+.copyright a:active {
   fill: #bdbbbc;
 }
 
@@ -324,6 +399,33 @@ footer .tel {
   background-repeat: no-repeat;
   color: #ffffff;
   line-height: 21px;
+  width: 1200px;
+  /*временно для сетки*/
+  height: 500px;
+  /*временно для сетки*/
+  margin: 0 auto;
+}
+
+.filter-wrapper1,
+.filter-wrapper2,
+.filter-wrapper3 {
+  display: inline-block;
+  height: 300px;
+  /*временно для сетки*/
+}
+
+.filter label {
+  display: block;
+}
+
+.filter-form {
+  width: 1200px;
+  /*временно для сетки*/
+  padding-top: 50px;
+  /*временно для сетки*/
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
 .filter legend {
@@ -350,7 +452,20 @@ footer .tel {
 *****************************************************************************/
 .sort {
   background-color: #ffffff;
+  display: flex;
+  width: 1200px;
+  /*временно для сетки*/
+  margin: 0 auto;
+  align-items: center;
 }
+
+.sort p,
+.sort ul,
+.sort ul li,
+.sort svg {
+  display: inline-block;
+}
+
 .sort p:first-child {
   font-size: 21px;
   font-weight: 700;
@@ -401,13 +516,31 @@ footer .tel {
 *****************************************************************************/
 .hotels-filtered {
   background-color: #fefefe;
+  width: 1200px;                     /*временно для сетки*/
+  margin: 0 auto; 
 }
 
+.hotels-list li {
+  display: flex;
+  width: 1200px;                    /*временно для сетки*/
+  justify-content: space-around;
+}
+
+.hotels-list img,
+.hotels-list .info-hotel-wrapper,
+.hotels-list .rating {
+  display: inline-block;
+}
+.info-hotel-wrapper {
+  background-color: lightgreen;   /*временно для сетки*/
+}
 .hotel-name {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #000000;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 .hotel-name:hover {
@@ -418,14 +551,13 @@ footer .tel {
   color: #b2b2b2;
 }
 
-.housing-type,
-.booking-price {
+.housing-type {
   line-height: 21px;
+  display: block;
 }
 
 .booking-details-button,
 .start-booking-button {
-  display: block;
   font-weight: 700;
   line-height: 21px;
   color: #ffffff;
@@ -466,8 +598,8 @@ footer .tel {
 }
 
 .rating {
-  display: block;
-  align-self: start;
+ 
+  align-self: flex-end;
   width: 110px;
   height: 27px;
   height: 24.5px;
