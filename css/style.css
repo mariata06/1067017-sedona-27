@@ -290,7 +290,7 @@ header {
 .search-form input[type=text],
 .search-form input::placeholder {
   width: 346px;
-  height: 38px;
+  padding: 6px 0;
 }
 
 .search-form input[type=number] {
@@ -363,7 +363,7 @@ header {
 
 footer {
   background-color: #ffffff;
-  opacity: 0.902;
+  opacity: 0.9;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -378,6 +378,14 @@ footer {
 
 .contacts {
   padding-left: 120px;
+}
+
+.contacts .hashtag {
+  margin-bottom: 0;
+}
+
+.contacts .tel {
+  margin-top: 0;
 }
 
 footer .hashtag,
@@ -411,7 +419,7 @@ footer .tel {
 }
 
 .social-icon:active img {
-  color: rgba(255, 255, 255, 0.302);
+  opacity: 0.3;
   background-color: #5496bd;
 }
 
@@ -568,9 +576,11 @@ footer .tel {
 .sort-pointer a:active svg {
   fill: #81b3d2;
 }
+
 .sort-pointer-active svg {
   fill: #81b3d2;
 }
+
 /*****************************************************************************
 **************************SECTION HOTELS FILTERED*****************************
 *****************************************************************************/
