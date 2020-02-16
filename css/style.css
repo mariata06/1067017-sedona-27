@@ -8,7 +8,7 @@ html {
   box-sizing: inherit;
 }
 
-
+/*
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -19,7 +19,7 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+*/
 body {
   margin: 0;
   padding: 0;
@@ -109,7 +109,7 @@ header {
 }
 
 .site-navigation a:active {
-  color: #b2b2b2;
+  color: rgba(0, 0, 0, 0.302);
 }
 
 .site-navigation .active {
@@ -234,17 +234,17 @@ header {
   line-height: 24px;
 }
 
-.booking .search-button {
+.booking .openform-button {
   background-color: #766357;
 }
 
-.booking .search-button:hover,
-.booking .search-button:focus {
+.booking .openform-button:hover,
+.booking .openform-button:focus {
   background-color: #604e43;
 }
 
-.booking .search-button:active {
-  color: #625248;
+.booking .openform-button:active {
+  color: rgba(255, 255, 255, 0.302);
   background-color: #503e33;
 }
 
@@ -269,28 +269,28 @@ header {
   line-height: 26px;
   font-weight: 700;
   background-color: #f2f2f2;
-  border: transparent;
+  outline: none;
+  border: none;
   display: inline-block;
 }
 
 .search-form input:hover[type=text],
-.search-form input:hover::placeholder,
-.search-form input:hover[type=number] {
+.search-form input:hover[type=number],
+.search-form input:hover::placeholder {
   background-color: #ebebeb;
 }
 
 .search-form input:focus[type=text],
-.search-form input:focus::placeholder,
-.search-form input:focus[type=number] {
+.search-form input:focus[type=number],
+.search-form input:focus::placeholder {
   background-color: #ffffff;
-  border: 2px solid #e5e5e5;
+  outline: 2px solid #f2f2f2;
 }
 
 .search-form input[type=text],
 .search-form input::placeholder {
   width: 346px;
   height: 38px;
-  border: none;
 }
 
 .search-form input[type=number] {
@@ -325,20 +325,32 @@ header {
   color: #81b3d2;
 }
 
-.search-form .button {
-  background-color: #81b3d2;
-}
 
-.search-form svg {
+
+.search-form .calendar-button svg {
   fill: #a9a9a9;
 }
 
-.search-form svg:hover {
+.search-form .calendar-button:hover svg {
   fill: #000000;
 }
 
-.search-form svg:active {
+.search-form .calendar-button:active svg {
   fill: #81b3d2;
+}
+
+.search-form .sendform-button {
+  background-color: #81b3d2;
+}
+
+.search-form .sendform-button:hover,
+.search-form .sendform-button:focus {
+  background-color: #669ec0;
+}
+
+.search-form .sendform-button:active {
+  color: rgba(255, 255, 255, 0.302);
+  background-color: #5496bd;
 }
 
 /*****************************************************************************
@@ -398,8 +410,8 @@ footer .tel {
   background-color: #669ec0;
 }
 
-.social-icon:active {
-  fill: #88b6d1;
+.social-icon:active img {
+  color: rgba(255, 255, 255, 0.302);
   background-color: #5496bd;
 }
 
@@ -415,11 +427,11 @@ footer .tel {
   display: block;
 }
 
-.copyright a:hover {
+.copyright a:hover svg {
   fill: #81b3d2;
 }
 
-.copyright a:active {
+.copyright a:active svg {
   fill: #bdbbbc;
 }
 
@@ -473,7 +485,7 @@ footer .tel {
   line-height: 21px;
 }
 
-.filter .filter-button {
+.filter-button {
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
@@ -524,13 +536,14 @@ footer .tel {
 }
 
 .sort-list a {
-  color: #cacaca;
+  color: rgba(0, 0, 0, 0.302);
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-color: #81b3d2;
 }
 
-.sort-list a:hover {
+.sort-list a:hover,
+.sort-list a:focus {
   color: #81b3d2;
 }
 
@@ -545,17 +558,19 @@ footer .tel {
 }
 
 .sort-pointer svg {
-  fill: #cacaca;
+  fill: rgba(0, 0, 0, 0.302);
 }
 
-.sort-pointer svg:hover {
+.sort-pointer a:hover svg {
   fill: #231f20;
 }
 
-.sort-pointer svg:active {
+.sort-pointer a:active svg {
   fill: #81b3d2;
 }
-
+.sort-pointer-active svg {
+  fill: #81b3d2;
+}
 /*****************************************************************************
 **************************SECTION HOTELS FILTERED*****************************
 *****************************************************************************/
@@ -603,7 +618,7 @@ footer .tel {
 }
 
 .hotel-name:active {
-  color: #b2b2b2;
+  color: rgba(0, 0, 0, 0.302);
 }
 
 .info-hotel .housing-type {
@@ -633,7 +648,7 @@ footer .tel {
 }
 
 .booking-details-button:active {
-  color: #88b6d1;
+  color: rgba(255, 255, 255, 0.302);
   background: #5496bd;
 }
 
@@ -647,7 +662,7 @@ footer .tel {
 }
 
 .start-booking-button:active {
-  color: #857871;
+  color: rgba(255, 255, 255, 0.302);
   background: #503e33;
 }
 
