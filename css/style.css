@@ -8,7 +8,7 @@ html {
   box-sizing: inherit;
 }
 
-/*
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -19,7 +19,6 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-*/
 
 body {
   margin: 0;
@@ -59,12 +58,24 @@ a {
 /*****************************************************************************
 ************************************HEADER************************************
 *****************************************************************************/
-header {
+.header-wrapper {
   width: 1200px;
-  /*временно для сетки*/
-  height: 56px;
   margin: 0 auto;
+}
+
+header {
+  height: 56px;
   background-color: tomato;
+}
+
+.main-navigation {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 530px;
 }
 
 .site-navigation {
@@ -72,19 +83,20 @@ header {
   /*временно для сетки*/
   height: 56px;
   display: flex;
+  flex-wrap: wrap;
   background-color: gold;
   margin: 0 auto;
   justify-content: space-between;
-  padding: 0px;
+  padding: 0;
   align-items: center;
 }
 
 .site-navigation li {
   font-size: 14px;
   font-weight: 700;
-  line-height: 21px;
+  line-height: 26px;
   background-color: #ffffff;
-  display: inline-block;
+  display: inline;
 }
 
 .site-navigation a {
@@ -107,6 +119,11 @@ header {
 /*****************************************************************************
 ******************************SECTION INTRO***********************************
 *****************************************************************************/
+.page-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .intro {
   background-color: #c66b57;
   background-image: url("../img/intro-bg.jpg");
@@ -114,84 +131,90 @@ header {
   background-repeat: no-repeat;
 }
 
-.intro h2 {
+.intro h1 {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
+.intro p {
+  line-height: 26px;
+}
+
 /*****************************************************************************
 ******************************SECTION ABOUT***********************************
 *****************************************************************************/
-.about .housing {
+.about {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.additional-features {
+  background-color: #ffffff;
+}
+
+.additional-features .feature {
+  min-height: 330px;
+  max-width: 400px;
+}
+
+.additional-features .housing {
   background-image: url("../img/icon-housing.svg");
   background-position: center 60px;
   background-repeat: no-repeat;
 }
 
-.about .meal {
+.additional-features .meal {
   background-image: url("../img/icon-burger.svg");
   background-position: center 60px;
   background-repeat: no-repeat;
 }
 
-.about .souvenirs {
+.additional-features .souvenirs {
   background-image: url("../img/icon-gift.svg");
   background-position: center 60px;
   background-repeat: no-repeat;
 }
 
-.feature h2 {
+.about h2 {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
 }
 
-.feature-wrapper1 .feature,
-.feature-wrapper3 .feature {
+.real-town,
+.additional-features,
+.devil-bridge,
+.features {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.real-town .info,
+.devil-bridge .info {
   color: #ffffff;
   background-color: #81b3d2;
+  min-height: 256px;
+  max-width: 400px;
 }
 
-.feature-wrapper2 .feature {
-  background-color: #ffffff;
-}
-
-.feature-wrapper4 .feature {
-  background-color: #eeeeee;
-}
-
-.about {
-  width: 1200px;
-  /*временно для сетки*/
-  margin: 0 auto;
-}
-
-.feature-wrapper1,
-.feature-wrapper2,
-.feature-wrapper3,
-.feature-wrapper4 {
-  width: 1200px;
-  /*временно для сетки*/
-  display: flex;
-  background-color: lightgreen;
-  /*временно для сетки*/
-}
-
-.feature-wrapper3 {
+.devil-bridge {
   flex-flow: row-reverse;
 }
 
-.feature-wrapper3 .feature {
+.devil-bridge .info {
   order: -1;
 }
 
-.feature {
-  display: inline-block;
-  height: 255px;
-  /*временно для сетки*/
-  width: 380px;
-  /*временно для сетки*/
+.features {
+  background-color: #eeeeee;
+}
+
+.features .feature {
+  min-height: 256px;
+  min-width: 400px;
 }
 
 /*****************************************************************************
@@ -235,6 +258,7 @@ header {
 }
 
 .search-form label {
+  line-height: 26px;
   font-weight: 700;
 }
 
@@ -242,6 +266,7 @@ header {
 .search-form input::placeholder,
 .search-form input[type=number] {
   color: #000000;
+  line-height: 26px;
   font-weight: 700;
   background-color: #f2f2f2;
   border: transparent;
@@ -319,21 +344,28 @@ header {
 /*****************************************************************************
 ************************************FOOTER************************************
 *****************************************************************************/
+.footer-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 footer {
   background-color: #ffffff;
   opacity: 0.902;
   display: flex;
-  width: 1200px;
-  /*временно для сетки*/
-  margin: 0 auto;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer-wrapper1,
+.contacts,
 .social-list,
 .copyright {
   display: inline;
+}
+
+.contacts {
+  padding-left: 120px;
 }
 
 footer .hashtag,
@@ -342,12 +374,15 @@ footer .tel {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+  text-align: left;
 }
 
 .social-list {
   width: 150px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  padding-left: 0;
 }
 
 .social-icon {
@@ -370,11 +405,14 @@ footer .tel {
 
 .copyright {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  padding-right: 100px;
 }
 
 .copyright p {
-  display: inline-block;
+  line-height: 26px;
+  display: block;
 }
 
 .copyright a:hover {
@@ -401,16 +439,16 @@ footer .tel {
   line-height: 21px;
   width: 1200px;
   /*временно для сетки*/
-  height: 500px;
+  min-height: 217px;
   /*временно для сетки*/
   margin: 0 auto;
 }
 
-.filter-wrapper1,
-.filter-wrapper2,
-.filter-wrapper3 {
-  display: inline-block;
-  height: 300px;
+.filter .infrastructure,
+.filter .housing-type,
+.filter .price-indicator {
+  display: inline;
+  height: 155px;
   /*временно для сетки*/
 }
 
@@ -424,6 +462,7 @@ footer .tel {
   padding-top: 50px;
   /*временно для сетки*/
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
 }
@@ -453,29 +492,35 @@ footer .tel {
 .sort {
   background-color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   width: 1200px;
   /*временно для сетки*/
   margin: 0 auto;
   align-items: center;
+  padding: 0 70px;
 }
 
 .sort p,
 .sort ul,
 .sort ul li,
-.sort svg {
-  display: inline-block;
+.sort span {
+  display: inline;
 }
 
 .sort p:first-child {
   font-size: 21px;
   font-weight: 700;
-  line-height: 34px;
+  line-height: 26px;
 }
 
 .sort .label-sort,
 .sort-list li {
   font-size: 12px;
   line-height: 18px;
+}
+
+.sort .sort-pointer {
+  margin-left: auto;
 }
 
 .sort-list a {
@@ -499,15 +544,15 @@ footer .tel {
   text-decoration: none;
 }
 
-.sort svg {
+.sort-pointer svg {
   fill: #cacaca;
 }
 
-.sort svg:hover {
+.sort-pointer svg:hover {
   fill: #231f20;
 }
 
-.sort svg:active {
+.sort-pointer svg:active {
   fill: #81b3d2;
 }
 
@@ -516,30 +561,40 @@ footer .tel {
 *****************************************************************************/
 .hotels-filtered {
   background-color: #fefefe;
-  width: 1200px;                     /*временно для сетки*/
-  margin: 0 auto; 
+  width: 1200px;
+  /*временно для сетки*/
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+.hotels-list {
+  padding-left: 0;
 }
 
 .hotels-list li {
   display: flex;
-  width: 1200px;                    /*временно для сетки*/
-  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .hotels-list img,
-.hotels-list .info-hotel-wrapper,
+.hotels-list .info-hotel,
 .hotels-list .rating {
-  display: inline-block;
+  display: inline;
 }
-.info-hotel-wrapper {
-  background-color: lightgreen;   /*временно для сетки*/
+
+.info-hotel {
+  background-color: lightgreen;
+  /*временно для сетки*/
+  margin-left: 30px;
 }
+
 .hotel-name {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #000000;
-  display: inline-block;
   margin: 0 auto;
 }
 
@@ -551,8 +606,7 @@ footer .tel {
   color: #b2b2b2;
 }
 
-.housing-type {
-  line-height: 21px;
+.info-hotel .housing-type {
   display: block;
 }
 
@@ -598,13 +652,13 @@ footer .tel {
 }
 
 .rating {
- 
   align-self: flex-end;
   width: 110px;
   height: 27px;
   height: 24.5px;
   background-color: #f2f2f2;
   text-align: center;
+  margin-left: auto;
 }
 
 .hotels-filtered .icon-star:after {
