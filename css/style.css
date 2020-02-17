@@ -44,7 +44,7 @@ a {
   font-weight: 700;
   color: #ffffff;
   border: 0;
-  border-width: 0px;
+  border-width: 0;
   text-transform: uppercase;
 }
 
@@ -96,7 +96,6 @@ header {
   font-weight: 700;
   line-height: 26px;
   background-color: #ffffff;
-  display: inline;
 }
 
 .site-navigation a {
@@ -109,10 +108,10 @@ header {
 }
 
 .site-navigation a:active {
-  color: rgba(0, 0, 0, 0.302);
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.site-navigation .active {
+.site-navigation .current-page {
   color: #766357;
 }
 
@@ -244,7 +243,7 @@ header {
 }
 
 .booking .openform-button:active {
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
 
@@ -271,7 +270,6 @@ header {
   background-color: #f2f2f2;
   outline: none;
   border: none;
-  display: inline-block;
 }
 
 .search-form input:hover[type=text],
@@ -327,15 +325,15 @@ header {
 
 
 
-.search-form .calendar-button svg {
+.calendar-button svg {
   fill: #a9a9a9;
 }
 
-.search-form .calendar-button:hover svg {
+.calendar-button:hover svg {
   fill: #000000;
 }
 
-.search-form .calendar-button:active svg {
+.calendar-button:active svg {
   fill: #81b3d2;
 }
 
@@ -349,7 +347,7 @@ header {
 }
 
 .search-form .sendform-button:active {
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
 }
 
@@ -368,12 +366,6 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-}
-
-.contacts,
-.social-list,
-.copyright {
-  display: inline;
 }
 
 .contacts {
@@ -418,9 +410,12 @@ footer .tel {
   background-color: #669ec0;
 }
 
+.social-icon:active {
+  background-color: #5496bd;
+}
+
 .social-icon:active img {
   opacity: 0.3;
-  background-color: #5496bd;
 }
 
 .copyright {
@@ -435,11 +430,11 @@ footer .tel {
   display: block;
 }
 
-.copyright a:hover svg {
+.copyright>a:hover svg {
   fill: #81b3d2;
 }
 
-.copyright a:active svg {
+.copyright>a:active svg {
   fill: #bdbbbc;
 }
 
@@ -467,7 +462,6 @@ footer .tel {
 .filter .infrastructure,
 .filter .housing-type,
 .filter .price-indicator {
-  display: inline;
   height: 155px;
   /*временно для сетки*/
 }
@@ -522,7 +516,7 @@ footer .tel {
 
 .sort p,
 .sort ul,
-.sort ul li,
+.sort ul>li,
 .sort span {
   display: inline;
 }
@@ -544,7 +538,7 @@ footer .tel {
 }
 
 .sort-list a {
-  color: rgba(0, 0, 0, 0.302);
+  color: rgba(0, 0, 0, 0.3);
   text-decoration: underline;
   text-decoration-style: dotted;
   text-decoration-color: #81b3d2;
@@ -566,18 +560,18 @@ footer .tel {
 }
 
 .sort-pointer svg {
-  fill: rgba(0, 0, 0, 0.302);
+  fill: rgba(0, 0, 0, 0.3);
 }
 
-.sort-pointer a:hover svg {
+.sort-pointer>a:hover svg {
   fill: #231f20;
 }
 
-.sort-pointer a:active svg {
+.sort-pointer>a:active svg {
   fill: #81b3d2;
 }
 
-.sort-pointer-active svg {
+.sort-pointer-current svg {
   fill: #81b3d2;
 }
 
@@ -615,7 +609,7 @@ footer .tel {
   margin-left: 30px;
 }
 
-.hotel-name {
+.hotel-name h3 {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -628,7 +622,7 @@ footer .tel {
 }
 
 .hotel-name:active {
-  color: rgba(0, 0, 0, 0.302);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .info-hotel .housing-type {
@@ -658,7 +652,7 @@ footer .tel {
 }
 
 .booking-details-button:active {
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
   background: #5496bd;
 }
 
@@ -672,7 +666,7 @@ footer .tel {
 }
 
 .start-booking-button:active {
-  color: rgba(255, 255, 255, 0.302);
+  color: rgba(255, 255, 255, 0.3);
   background: #503e33;
 }
 
