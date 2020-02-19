@@ -38,34 +38,42 @@
             <fieldset class="infrastructure">
               <legend>Инфраструктура:</legend>
               <input type="checkbox" id="pool" name="infrastructure" checked class="visually-hidden">
+              <div class="checkbox-indicator-on"></div>
               <label for="pool">Бассейн</label>
 
               <input type="checkbox" id="parking" name="infrastructure" class="visually-hidden">
+              <div class="checkbox-indicator-off"></div>
               <label for="parking">Парковка</label>
 
               <input type="checkbox" id="wifi" name="infrastructure" class="visually-hidden">
+              <div class="checkbox-indicator-off"></div>
               <label for="wifi">Wi-Fi</label>
             </fieldset>
 
             <fieldset class="housing-type">
               <legend>Тип жилья:</legend>
               <input type="checkbox" id="hotel" name="housing type" checked class="visually-hidden">
+              <div class="checkbox-indicator-on"></div>
               <label for="hotel">Гостиница</label>
 
               <input type="checkbox" id="motel" name="housing type" checked class="visually-hidden">
+              <div class="checkbox-indicator-on"></div>
               <label for="motel">Мотель</label>
 
               <input type="checkbox" id="appartements" name="housing type" checked class="visually-hidden">
+              <div class="checkbox-indicator-on"></div>
               <label for="appartements">Аппартаменты</label>
             </fieldset>
 
             <fieldset class="price-indicator">
               <legend><label for="cost-per-day">Стоимость в сутки (Р):</label></legend>
-              от<span class="min-price">0</span>до<span class="max-price">3000</span>
-              <input type="range" min="0" max="3000" step="100" id="cost-per-day">
+              <div class="price-container"><span class="min-price">от 0</span><span class="max-price">до 3000</span>
+              </div>
+              <input type="range" min="0" max="3000" step="100" id="cost-per-day" class="visually-hidden">
+              <span class="input-type-range"></span>
+              <button type="submit" class="button filter-button">Показать</button>
             </fieldset>
 
-            <button type="submit" class="button filter-button">Показать</button>
           </div>
         </form>
       </section>
@@ -91,7 +99,7 @@
       </div>
 
       <!--Список Гостиниц-->
-      <section class="hotels-filtered">
+      <section class="hotels-available">
         <h2 class="visually-hidden">Доступные гостиницы</h2>
         <ul class="hotels-list">
           <li>
@@ -104,7 +112,15 @@
               <a href="#" class="booking-details-button">Подробнее</a>
               <a href="#" class="start-booking-button">Забронировать</a>
             </div>
-            <span class="rating">Рейтинг: 8,5</span>
+            <div class="rating-container">
+              <div class="icon-star-container">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
+              <span class="rating">Рейтинг: 8,5</span>
+            </div>
           </li>
 
           <li>
@@ -117,7 +133,14 @@
               <a href="#" class="booking-details-button">Подробнее</a>
               <a href="#" class="start-booking-button">Забронировать</a>
             </div>
-            <span class="rating">Рейтинг: 8,9</span>
+            <div class="rating-container">
+              <div class="icon-star-container">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
+              <span class="rating">Рейтинг: 8,9</span>
+            </div>
           </li>
 
           <li>
@@ -130,7 +153,13 @@
               <a href="#" class="booking-details-button">Подробнее</a>
               <a href="#" class="start-booking-button">Забронировать</a>
             </div>
-            <span class="rating">Рейтинг: 9,2</span>
+            <div class="rating-container">
+              <div class="icon-star-container">
+                <span class="icon-star"></span>
+                <span class="icon-star"></span>
+              </div>
+              <span class="rating">Рейтинг: 9,2</span>
+            </div>
           </li>
         </ul>
       </section>
