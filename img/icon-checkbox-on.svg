@@ -1,6 +1,36 @@
 
 <svg width="27px" height="23px" viewBox="0 0 27 23" >
 		<polygon points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		"/>
-		<path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+		<path fill="#000000" d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
 			H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z"/>
 </svg>
+
+
+.Layer_48_copy_10 {
+  background-image: url("Layer 48 copy 10.png");
+  opacity: 0;
+  position: absolute;
+  left: 848px;
+  top: 112px;
+  width: 322px;
+  height: 40px;
+  z-index: 11;
+}
+.white_back {
+  background-image: url("white back.png");
+  position: absolute;
+  left: 26px;
+  top: -9px;
+  width: 1229px;
+  height: 2791px;
+  z-index: 2;
+}
+.Layer_35_copy {
+  background-image: url("Layer 35 copy.png");
+  position: absolute;
+  left: 342px;
+  top: 2162px;
+  width: 597px;
+  height: 424px;
+  z-index: 6;
+}

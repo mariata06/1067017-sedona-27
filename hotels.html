@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  
   <div class="header-wrapper">
     <header>
       <nav class="main-navigation">
@@ -37,31 +38,25 @@
 
             <fieldset class="infrastructure">
               <legend>Инфраструктура:</legend>
-              <input type="checkbox" id="pool" name="infrastructure" checked class="visually-hidden">
-              <div class="checkbox-indicator-on"></div>
+              <input type="checkbox" id="pool" name="infrastructure" class="visually-hidden filter-input checkbox-indicator-on" checked>
               <label for="pool">Бассейн</label>
 
-              <input type="checkbox" id="parking" name="infrastructure" class="visually-hidden">
-              <div class="checkbox-indicator-off"></div>
+              <input type="checkbox" id="parking" name="infrastructure" class="visually-hidden filter-input checkbox-indicator-off">
               <label for="parking">Парковка</label>
 
-              <input type="checkbox" id="wifi" name="infrastructure" class="visually-hidden">
-              <div class="checkbox-indicator-off"></div>
+              <input type="checkbox" id="wifi" name="infrastructure" class="visually-hidden filter-input checkbox-indicator-off">
               <label for="wifi">Wi-Fi</label>
             </fieldset>
 
             <fieldset class="housing-type">
               <legend>Тип жилья:</legend>
-              <input type="checkbox" id="hotel" name="housing type" checked class="visually-hidden">
-              <div class="checkbox-indicator-on"></div>
+              <input type="checkbox" id="hotel" name="housing type" class="visually-hidden filter-input checkbox-indicator-on" checked>
               <label for="hotel">Гостиница</label>
 
-              <input type="checkbox" id="motel" name="housing type" checked class="visually-hidden">
-              <div class="checkbox-indicator-on"></div>
+              <input type="checkbox" id="motel" name="housing type" class="visually-hidden filter-input checkbox-indicator-on" checked>
               <label for="motel">Мотель</label>
 
-              <input type="checkbox" id="appartements" name="housing type" checked class="visually-hidden">
-              <div class="checkbox-indicator-on"></div>
+              <input type="checkbox" id="appartements" name="housing type" class="visually-hidden filter-input checkbox-indicator-on" checked>
               <label for="appartements">Аппартаменты</label>
             </fieldset>
 
@@ -70,7 +65,9 @@
               <div class="price-container"><span class="min-price">от 0</span><span class="max-price">до 3000</span>
               </div>
               <input type="range" min="0" max="3000" step="100" id="cost-per-day" class="visually-hidden">
-              <span class="input-type-range"></span>
+              <div class="input-type-range">
+                <div class="bar"></div>
+              </div>
               <button type="submit" class="button filter-button">Показать</button>
             </fieldset>
 
@@ -108,9 +105,15 @@
               <a href="#" class="hotel-name">
                 <h3>Amara Resort & Spa</h3>
               </a>
-              <p class="housing-type">Гостиница<span class="booking-price">От 4000 Р.</span></p>
-              <a href="#" class="booking-details-button">Подробнее</a>
-              <a href="#" class="start-booking-button">Забронировать</a>
+              <div class="housing-type">
+                <span>Гостиница</span>
+                <a href="#" class="booking-details-button">Подробнее</a>
+              </div>
+
+              <div class="booking-price">
+                <span>От 4000 Р.</span>
+                <a href="#" class="start-booking-button">Забронировать</a>
+              </div>
             </div>
             <div class="rating-container">
               <div class="icon-star-container">
@@ -129,9 +132,17 @@
               <a href="#" class="hotel-name">
                 <h3>Desert Quail Inn</h3>
               </a>
-              <p class="housing-type">Мотель<span class="booking-price">От 3000 Р.</span></p>
-              <a href="#" class="booking-details-button">Подробнее</a>
-              <a href="#" class="start-booking-button">Забронировать</a>
+
+              <div class="housing-type">
+                <span>Мотель</span>
+                <a href="#" class="booking-details-button">Подробнее</a>
+              </div>
+
+              <div class="booking-price">
+                <span>От 3000 Р.</span>
+                <a href="#" class="start-booking-button">Забронировать</a>
+              </div>
+
             </div>
             <div class="rating-container">
               <div class="icon-star-container">
@@ -149,9 +160,17 @@
               <a href="#" class="hotel-name">
                 <h3>Villas at Poco Diablo</h3>
               </a>
-              <p class="housing-type">Аппартаменты<span class="booking-price">От 2000 Р.</span></p>
-              <a href="#" class="booking-details-button">Подробнее</a>
-              <a href="#" class="start-booking-button">Забронировать</a>
+
+              <div class="housing-type">
+                <span>Аппартаменты</span>
+                <a href="#" class="booking-details-button">Подробнее</a>
+              </div>
+
+              <div class="booking-price">
+                <span>От 2000 Р.</span>
+                <a href="#" class="start-booking-button">Забронировать</a>
+              </div>
+
             </div>
             <div class="rating-container">
               <div class="icon-star-container">
@@ -202,6 +221,7 @@
       </div>
     </footer>
   </div>
+
 </body>
 
 </html>
