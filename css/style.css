@@ -62,16 +62,6 @@ a {
 /*****************************************************************************
 ************************************HEADER************************************
 *****************************************************************************/
-.index-container {
-  width: 1200px;
-  margin: 0 auto;
-}
-
-.header-wrapper {
-  -webkit-box-shadow: 0 5px 15px 0 rgba(00, 11, 11, 0.2);
-  box-shadow: 0 5px 15px 0 rgba(00, 11, 11, 0.2);
-}
-
 header {
   height: 56px;
   background-color: #ffffff;
@@ -92,34 +82,19 @@ header {
 }
 
 .site-navigation {
-  width: 1056px;
+  padding: 0 72px;
   height: 56px;
-
   display: -webkit-box;
-
   display: -ms-flexbox;
-
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 0;
-  /*
-  
-  justify-content: flex-end;*/
+  margin: 0;
 }
 
-/*
-.flex-start {
-  justify-content: flex-start;
-}
-.flex-end {
-  justify-content: flex-end;
-}
-*/
 .site-navigation li {
   font-size: 14px;
   font-weight: 700;
@@ -138,10 +113,6 @@ header {
   text-align: right;
 }
 
-/*
-.site-navigation li:nth-child(-n+2)~* {
-  text-align: right;
-}*/
 .site-navigation a {
   color: #000000;
 }
@@ -162,15 +133,21 @@ header {
 /*****************************************************************************
 ******************************SECTION INTRO***********************************
 *****************************************************************************/
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
 .page-wrapper {
   width: 1200px;
   margin: 0 auto;
   -webkit-box-shadow: 0 5px 15px 0 rgba(00, 11, 11, 0.2);
   box-shadow: 0 5px 15px 0 rgba(00, 11, 11, 0.2);
+  position: relative;
 }
 
 .intro {
-  background-color: #c66b57;
+  background-color: #40759e;
   background-image: url("../img/polygon.png"), url("../img/intro-bg.jpg");
   background-position: center 462px, top center; 
   background-repeat: no-repeat, no-repeat;
@@ -302,12 +279,13 @@ header {
 ******************************SECTION BOOKING*********************************
 *****************************************************************************/
 .booking {
+  max-width: 1200px;
   background-color: #ffffff;
+  margin: 0 auto;
+  position: relative;
 }
 
-.booking .map {
-  width: 1200px;
-  height: 593px;
+.map {
   background-image: url("../img/map.png");
   background-position: bottom center;
   background-repeat: no-repeat;
@@ -345,10 +323,6 @@ header {
   background-color: #503e33;
 }
 
-.booking {
-  position: relative;
-}
-
 .booking .search-form {
   background-color: #ffffff;
   padding: 55px 50px;
@@ -363,9 +337,8 @@ header {
   transform: translate(-50%, 0);
   -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
   box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
-  /*display: none;*/
+  display: none;
 }
-
 
 .checkin-container,
 .checkout-container,
@@ -426,13 +399,6 @@ header {
   margin-left: 12px;
 }
 
-/*
-.search-form .form-wrapper {
-  max-width: 570px;
-  padding: 55px 50px;
-  display: flex;
-}
-*/
 .search-form input::-webkit-input-placeholder {
   color: #000000;
   font-size: 14px;
@@ -665,11 +631,7 @@ input::-webkit-inner-spin-button {
 /*****************************************************************************
 ************************************FOOTER************************************
 *****************************************************************************/
-.index-container {
-  position: relative;
-}
-
-.index-container .footer-wrapper {
+.page-wrapper .footer-wrapper {
   position: absolute;
   bottom: 0;
   width: 1200px;
@@ -712,7 +674,9 @@ footer .tel {
   color: #000000;
   text-align: left;
 }
-
+.tel a[href^="tel:"] {
+  color: #000000;
+} 
 .social-list {
   width: 150px;
   display: -webkit-box;
@@ -792,6 +756,8 @@ footer .tel {
 .hotels-container {
   width: 1200px;
   margin: 0 auto;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(00, 11, 11, 0.2);
+  box-shadow: 0 5px 15px 0 rgba(00, 11, 11, 0.2);
 }
 
 /*****************************************************************************
@@ -878,29 +844,11 @@ footer .tel {
   left: -15px;
 }
 
-/*************************************************************************
-*************************styles for Disabled*****************************/
-/*
 .infrastructure input:disabled+label::before,
 .housing-type input:disabled+label::before {
-  content: url("../img/checkbox-on-disabled.svg");
-  margin-right: 12px;
-  margin-left: 15px;
-  position: absolute;
-  top: 40%;
-  left: -15px;
+  filter: brightness(0) opacity(0.2);
 }
-.infrastructure label::before,
-.housing-type label::before {
-  content: url("../img/checkbox-off-disabled.svg");
-  margin-right: 12px;
-  margin-left: 15px;
-  position: absolute;
-  top: 40%;
-  left: -15px;
-}
-*/
-/*************************************************************************/
+
 input[type="checkbox"],
 input[type="range"] {
   display: none;
@@ -925,7 +873,7 @@ input[type="range"] {
   background-color: #ffffff;
 }
 
-.input-type-range::before {
+.range-button-left::before {
   display: block;
   content: "";
   width: 4px;
@@ -938,12 +886,12 @@ input[type="range"] {
   left: 22px;
   -webkit-box-sizing: initial;
   box-sizing: initial;
-  -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
-  box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
+  -webkit-box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
+  box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
   cursor: pointer;
 }
 
-.input-type-range::after {
+.range-button-right::before {
   display: block;
   content: "";
   width: 4px;
@@ -956,13 +904,20 @@ input[type="range"] {
   left: 222px;
   -webkit-box-sizing: initial;
   box-sizing: initial;
-  box-shadow: 0px 7px 15px 0px rgba(00, 11, 11, 0.15);
+  -webkit-box-shadow: 0px 6px 15px 0px rgba(0, 1, 1, 0.25);
+  box-shadow: 0px 6px 15px 0px rgba(00, 11, 11, 0.25);
   cursor: pointer;
 }
 
-.input-type-range:hover::before,
-.input-type-range:hover::after {
+.range-button-left:hover::before {
   border: 9px solid #ffffff;
+  top: -10px;
+  left: 21px;
+}
+.range-button-right:hover::before {
+  border: 9px solid #ffffff;
+  top: -10px;
+  left: 221px;
 }
 
 .price-indicator label {

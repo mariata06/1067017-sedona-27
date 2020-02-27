@@ -38,7 +38,7 @@
 
             <fieldset class="infrastructure">
               <legend>Инфраструктура:</legend>
-              <input type="checkbox" id="pool" name="infrastructure" class="visually-hidden" checked>
+              <input type="checkbox" id="pool" name="infrastructure" class="visually-hidden" checked disabled>
               <label for="pool">Бассейн</label>
 
               <input type="checkbox" id="parking" name="infrastructure" class="visually-hidden">
@@ -67,6 +67,8 @@
               <input type="range" min="0" max="3000" step="100" id="cost-per-day" class="visually-hidden">
               <div class="input-type-range">
                 <div class="bar"></div>
+                <div class="range-button-left"></div>
+                <div class="range-button-right"></div>
               </div>
               <button type="submit" class="button filter-button">Показать</button>
             </fieldset>
@@ -189,7 +191,7 @@
     <footer>
       <div class="contacts">
         <p class="hashtag">#visitsedona</p>
-        <p class="tel">тел:&nbsp;+7(495)&nbsp;666-02-66</p>
+        <p class="tel"><a href="tel:+74956660266">тел:&nbsp;+7(495)&nbsp;666-02-66</a></p>
       </div>
       <ul class="social-list">
         <li>
