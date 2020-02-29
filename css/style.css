@@ -1,4 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 html {
   -webkit-box-sizing: border-box;
@@ -58,7 +57,10 @@ a {
 .hotels-list {
   list-style: none;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+}
 /*****************************************************************************
 ************************************HEADER************************************
 *****************************************************************************/
@@ -133,19 +135,13 @@ header {
 /*****************************************************************************
 ******************************SECTION INTRO***********************************
 *****************************************************************************/
-.container {
-  width: 1280px;
-  margin: 0 auto;
-  background-color: #f2f2f2;
-}
-.page-wrapper {
+.index-wrapper {
   width: 1200px;
   margin: 0 auto;
   -webkit-box-shadow: 0 5px 15px 0 rgba(00, 11, 11, 0.2);
   box-shadow: 0 5px 15px 0 rgba(00, 11, 11, 0.2);
   position: relative;
 }
-
 .intro {
   background-color: #40759e;
   background-image: url("../img/polygon.png"), url("../img/intro-bg.jpg");
@@ -631,7 +627,7 @@ input::-webkit-inner-spin-button {
 /*****************************************************************************
 ************************************FOOTER************************************
 *****************************************************************************/
-.page-wrapper .footer-wrapper {
+.index-wrapper .footer-wrapper {
   position: absolute;
   bottom: 0;
   width: 1200px;
@@ -753,13 +749,12 @@ footer .tel {
 /*****************************************************************************
 ************************************HOTELS PAGE*******************************
 *****************************************************************************/
-.hotels-container {
+.hotels-wrapper {
   width: 1200px;
   margin: 0 auto;
   -webkit-box-shadow: 0 5px 15px 0 rgba(00, 11, 11, 0.2);
   box-shadow: 0 5px 15px 0 rgba(00, 11, 11, 0.2);
 }
-
 /*****************************************************************************
 *********************************SECTION FILTER*******************************
 *****************************************************************************/
@@ -983,14 +978,6 @@ input[type="range"] {
   padding: 31px 70px;
 }
 
-/*
-.sort p,
-.sort ul,
-.sort ul>li,
-.sort span {
-  display: inline;
-}
-*/
 .sort ul>li {
   display: inline;
 }
