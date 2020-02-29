@@ -105,7 +105,7 @@
             style="width:1200px; height:593px; border:0;" allowfullscreen=""></iframe>
         </div>
         <div class="search-form">
-          <form action="https://echo.htmlacademy.ru" method="post">
+          <form action="https://echo.htmlacademy.ru" method="post" class="booking-form">
             <div class="form-wrapper">
               <div class="checkin-container">
                 <label>дата заезда:</label>
@@ -164,14 +164,14 @@
                 <div class="adults-container">
                   <label>взрослые:</label>
                   <button type="button" aria-label="количество взрослых -1" class="button-minus"></button>
-                  <input type="number" value="2">
+                  <input type="number" value="adultsNumber" placeholder="0">
                   <button type="button" aria-label="количество взрослых +1" class="button-plus"></button>
                 </div>
 
                 <div class="children-container">
                   <label>дети:</label>
                   <button type="button" aria-label="количество детей -1" class="button-minus"></button>
-                  <input type="number" value="0">
+                  <input type="number" value="childrenNumber" placeholder="0">
                   <button type="button" aria-label="количество детей +1" class="button-plus"></button>
                 </div>
 
@@ -223,6 +223,7 @@
       </footer>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
