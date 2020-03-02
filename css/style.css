@@ -136,7 +136,7 @@ header {
 /*****************************************************************************
 ******************************SECTION INTRO***********************************
 *****************************************************************************/
-.index-wrapper {
+.page-wrapper {
   width: 1200px;
   margin: 0 auto;
   -webkit-box-shadow: 0 5px 15px 0 rgba(00, 11, 11, 0.2);
@@ -149,7 +149,7 @@ header {
   background-image: url("../img/polygon.png"), url("../img/intro-bg.jpg");
   background-position: center 462px, top center;
   background-repeat: no-repeat, no-repeat;
-  min-height: 510px;
+  min-height: 509px;
 }
 
 .intro img {
@@ -335,7 +335,7 @@ header {
   transform: translate(-50%, 0);
   -webkit-box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
   box-shadow: 0px 7px 15px 0px rgba(0, 1, 1, 0.15);
-  display: none;
+  display: block;
 }
 
 .checkin-container,
@@ -639,20 +639,30 @@ input::-webkit-inner-spin-button {
 /*Анимация для выезжающей формы бронирования*/
 @keyframes bounce {
   0% {
-    transform: translateY(-2170px);
+    transform: translate(-50%, -558px);  /*начальное положение формы над кнопкой вызова*/
+    animation-timing-function: linear;
+  }
+  
+  20% {
+    transform: translate(-50%, -446px);
+    animation-timing-function: linear;
   }
 
-  /*
-  70% {
-    transform: translateY(30px);
+  40% {
+    transform: translate(-50%, -335px);
+    animation-timing-function: linear;
   }
-
-  90% {
-    transform: translateY(-10px);
+  60% {
+    transform: translate(-50%, -223px);
+    animation-timing-function: linear;
   }
-*/
+  80% {
+    transform: translate(-50%, -111px);
+    animation-timing-function: linear;
+  }
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
+    animation-timing-function: linear;
   }
 }
 
@@ -661,7 +671,7 @@ input::-webkit-inner-spin-button {
 
   0%,
   100% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
 
   10%,
@@ -669,24 +679,26 @@ input::-webkit-inner-spin-button {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    transform: translateX(-51%);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    transform: translateX(-49%);
   }
 }
 
 /*Добавление в стили класс, который будет отвечать за появление формы.*/
 .search-form-show {
   display: block;
-
-  animation: bounce 0.6s;
+  
+  animation: bounce 0.6s;       
 }
-
+.search-form-hide {
+  display: none;
+}
 /*Добавление класса, который будет добавлять эту анимацию к модальному окну.*/
 .search-form-error {
   animation: shake 0.6s;
@@ -695,7 +707,7 @@ input::-webkit-inner-spin-button {
 /*****************************************************************************
 ************************************FOOTER************************************
 *****************************************************************************/
-.index-wrapper .footer-wrapper {
+.footer-index {
   position: absolute;
   bottom: 0;
   width: 1200px;
@@ -819,12 +831,6 @@ footer .tel {
 /*****************************************************************************
 ************************************HOTELS PAGE*******************************
 *****************************************************************************/
-.hotels-wrapper {
-  width: 1200px;
-  margin: 0 auto;
-  -webkit-box-shadow: 0 5px 15px 0 rgba(00, 11, 11, 0.2);
-  box-shadow: 0 5px 15px 0 rgba(00, 11, 11, 0.2);
-}
 
 /*****************************************************************************
 *********************************SECTION FILTER*******************************

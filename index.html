@@ -10,7 +10,8 @@
 </head>
 
 <body>
-  <div class="index-wrapper">
+  <!--<noscript><p>Ваш браузер не поддерживает скрипты!</p></noscript>-->
+  <div class="page-wrapper">
 
     <header>
       <nav class="main-navigation">
@@ -106,10 +107,10 @@
         </div>
         <div class="search-form">
           <form action="https://echo.htmlacademy.ru" method="post" class="booking-form">
-            <div class="form-wrapper">
+            
               <div class="checkin-container">
                 <label>дата заезда:</label>
-                <input type="text" placeholder="24 АПРЕЛЯ 2017">
+                <input class="checkin" type="text" placeholder="24 АПРЕЛЯ 2017">
                 <button type="button" aria-label="Открыть календарь" class="calendar-button">
                   <svg width="21px" height="22px" viewBox="0 0 21 22">
                     <path
@@ -135,7 +136,7 @@
 
               <div class="checkout-container">
                 <label>дата выезда:</label>
-                <input type="text" placeholder="4 ИЮЛЯ 2017">
+                <input class="checkout" type="text" placeholder="4 ИЮЛЯ 2017">
                 <button type="button" aria-label="Открыть календарь" class="calendar-button">
                   <svg width="21px" height="22px" viewBox="0 0 21 22">
                     <path
@@ -176,7 +177,7 @@
                 </div>
 
               </div>
-            </div>
+            
 
             <button type="submit" class="button sendform-button">Найти</button>
           </form>
@@ -185,7 +186,7 @@
 
     </main>
 
-    <div class="footer-wrapper">
+    <div class="footer-wrapper footer-index">
       <footer>
         <div class="contacts">
           <p class="hashtag">#visitsedona</p>
