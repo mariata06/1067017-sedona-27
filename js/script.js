@@ -2,9 +2,9 @@ var button = document.querySelector(".openform-button");
 var popup = document.querySelector(".search-form");   /*внешняя обертка формы*/
 var form = popup.querySelector("form");  /*в обертке находим саму <форму>*/
 
-var adultsNumber = form.querySelector("[value=adultsNumber]");
+var adultsNumber = form.querySelector("[name=adultsNumber]");
 
-var childrenNumber = form.querySelector("[value=childrenNumber]");
+var childrenNumber = form.querySelector("[name=childrenNumber]");
 
 var checkin = form.querySelector(".checkin"); 
 
@@ -55,6 +55,7 @@ form.addEventListener("submit", function (evt) {
   }
 });
 
+/*
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
@@ -64,3 +65,4 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+*/

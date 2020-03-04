@@ -287,6 +287,7 @@ header {
   background-image: url("../img/map.png");
   background-position: bottom center;
   background-repeat: no-repeat;
+  
 }
 
 .booking h2 {
@@ -321,7 +322,7 @@ header {
   background-color: #503e33;
 }
 
-.booking .search-form {
+.search-form {
   background-color: #ffffff;
   padding: 55px 50px;
   max-width: 570px;
@@ -1089,11 +1090,13 @@ input[type="range"] {
 
 .sort-list a {
   color: rgba(0, 0, 0, 0.3);
+  /*
   text-decoration: underline;
   -webkit-text-decoration-style: dotted;
   text-decoration-style: dotted;
   -webkit-text-decoration-color: #81b3d2;
-  text-decoration-color: #81b3d2;
+  text-decoration-color: #81b3d2;*/
+  border-bottom: 1px dotted #81b3d2;
 }
 
 .sort-list a:hover,
@@ -1103,12 +1106,15 @@ input[type="range"] {
 
 .sort-list a:active {
   color: #000000;
-  text-decoration: none;
+  border-bottom: none;
+  /*text-decoration: none;*/
 }
 
 .sort-list .current {
   color: #81b3d2;
-  text-decoration: none;
+  border-bottom: none;
+  /*text-decoration: none;*/
+
 }
 
 .sort-pointer svg {

@@ -110,7 +110,7 @@
             
               <div class="checkin-container">
                 <label>дата заезда:</label>
-                <input class="checkin" type="text" placeholder="24 АПРЕЛЯ 2017">
+                <input class="checkin" type="text" name="date-checkin" value="24 АПРЕЛЯ 2017" required>
                 <button type="button" aria-label="Открыть календарь" class="calendar-button">
                   <svg width="21px" height="22px" viewBox="0 0 21 22">
                     <path
@@ -136,7 +136,7 @@
 
               <div class="checkout-container">
                 <label>дата выезда:</label>
-                <input class="checkout" type="text" placeholder="4 ИЮЛЯ 2017">
+                <input class="checkout" type="text" name="date-checkout" value="4 ИЮЛЯ 2017" required>
                 <button type="button" aria-label="Открыть календарь" class="calendar-button">
                   <svg width="21px" height="22px" viewBox="0 0 21 22">
                     <path
@@ -165,14 +165,14 @@
                 <div class="adults-container">
                   <label>взрослые:</label>
                   <button type="button" aria-label="количество взрослых -1" class="button-minus"></button>
-                  <input type="number" value="adultsNumber" placeholder="0">
+                  <input type="number" name="adultsNumber" value="0">
                   <button type="button" aria-label="количество взрослых +1" class="button-plus"></button>
                 </div>
 
                 <div class="children-container">
                   <label>дети:</label>
                   <button type="button" aria-label="количество детей -1" class="button-minus"></button>
-                  <input type="number" value="childrenNumber" placeholder="0">
+                  <input type="number" name="childrenNumber" value="0">
                   <button type="button" aria-label="количество детей +1" class="button-plus"></button>
                 </div>
 
