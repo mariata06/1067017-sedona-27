@@ -449,6 +449,7 @@ img {
   outline: none;
   border: none;
   margin-left: 12px;
+  width: 290px;
 }
 
 .search-form input::-ms-input-placeholder {
@@ -460,6 +461,7 @@ img {
   outline: none;
   border: none;
   margin-left: 12px;
+  width: 290px;
 }
 
 .search-form input {
@@ -472,6 +474,7 @@ img {
   border: none;
   margin-left: 12px;
   padding: 6px 0 14px 6px;
+  width: 290px;
 }
 
 .search-form input::-webkit-input-placeholder {
@@ -505,6 +508,7 @@ img {
   outline: none;
   border: none;
   margin-left: 12px;
+  width: 290px;
 }
 
 .search-form input::-ms-input-placeholder {
@@ -516,6 +520,7 @@ img {
   outline: none;
   border: none;
   margin-left: 12px;
+  width: 290px;
 }
 
 .search-form input:hover::-webkit-input-placeholder {
