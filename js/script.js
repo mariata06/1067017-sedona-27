@@ -1,6 +1,6 @@
 var button = document.querySelector(".openform-button");
-var popup = document.querySelector(".search-form");   /*внешняя обертка формы*/
-var form = popup.querySelector("form");  /*в обертке находим саму <форму>*/
+var popup = document.querySelector(".search-form");   
+var form = popup.querySelector("form");  
 
 var adultsNumber = form.querySelector("[name=adultsNumber]");
 
@@ -54,15 +54,3 @@ form.addEventListener("submit", function (evt) {
     }
   }
 });
-
-/*
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    evt.preventDefault();
-    if (popup.classList.contains("search-form-show")) {
-      popup.classList.remove("search-form-show");
-      popup.classList.remove("search-form-error");
-    }
-  }
-});
-*/

@@ -15,7 +15,7 @@
     <header>
       <nav class="main-navigation">
         <div class="logo">
-          <a href="index.html"><img src="img/main-logo.png" alt="Лого" width="140" height="71"></a>
+          <a href="index.html"><img src="img/main-logo.svg" alt="Лого" width="140" height="71"></a>
         </div>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
@@ -36,29 +36,29 @@
             <fieldset class="infrastructure">
               <legend>Инфраструктура:</legend>
               <input type="checkbox" id="pool" name="infrastructure" class="visually-hidden" checked>
-              <label for="pool">Бассейн</label>
+              <label tabindex="0" for="pool">Бассейн</label>
 
               <input type="checkbox" id="parking" name="infrastructure" class="visually-hidden">
-              <label for="parking">Парковка</label>
+              <label tabindex="0" for="parking">Парковка</label>
 
               <input type="checkbox" id="wifi" name="infrastructure" class="visually-hidden">
-              <label for="wifi">Wi-Fi</label>
+              <label tabindex="0" for="wifi">Wi-Fi</label>
             </fieldset>
 
             <fieldset class="housing-type">
               <legend>Тип жилья:</legend>
               <input type="checkbox" id="hotel" name="housing type" class="visually-hidden" checked>
-              <label for="hotel">Гостиница</label>
+              <label tabindex="0" for="hotel">Гостиница</label>
 
               <input type="checkbox" id="motel" name="housing type" class="visually-hidden" checked>
-              <label for="motel">Мотель</label>
+              <label tabindex="0" for="motel">Мотель</label>
 
               <input type="checkbox" id="appartements" name="housing type" class="visually-hidden" checked>
-              <label for="appartements">Аппартаменты</label>
+              <label tabindex="0" for="appartements">Аппартаменты</label>
             </fieldset>
 
             <fieldset class="price-indicator">
-              <legend><label for="cost-per-day">Стоимость в сутки (Р):</label></legend>
+              <legend class="cost-per-day"><label for="cost-per-day">Стоимость в сутки (Р):</label></legend>
               <div class="price-container"><span class="min-price">от 0</span><span class="max-price">до 3000</span>
               </div>
               <input type="range" min="0" max="3000" step="100" id="cost-per-day" class="visually-hidden">
@@ -83,11 +83,11 @@
           <li><a href="#">По рейтингу</a></li>
         </ul>
         <span class="sort-pointer">
-          <a href="#">
+          <a href="#" class="sort-pointer-link">
             <svg width="11px" height="10px" viewBox="0 0 11 10">
               <polygon points="5.5,0 0,10 11,10 " />
             </svg></a>
-          <a href="#" class="sort-pointer-current">
+          <a href="#" class="sort-pointer-link sort-pointer-current">
             <svg width="11px" height="10px" viewBox="0 0 11 10">
               <polyline points="5.5,10 0,0 11,0 " />
             </svg></a>
