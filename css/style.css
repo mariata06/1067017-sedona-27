@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url("../fonts/web/ptsans.woff") format("woff"),
+    url("../fonts/web/ptsans.woff2") format("woff2");
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src:
+    url("../fonts/web/ptsansbold.woff") format("woff"),
+    url("../fonts/web/ptsansbold.woff2") format("woff2");
+
+    font-weight: bold;
+    font-style: normal;
+}
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -26,7 +46,7 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -106,26 +126,46 @@ img {
   font-weight: 700;
   line-height: 26px;
   background-color: #ffffff;
+  width: 220px;
 }
 
 .site-navigation li:first-child,
 .site-navigation li:nth-child(2) {
   text-align: left;
+  align-items: flex-start;
 }
 
+.site-navigation li:first-child {
+  margin-right: 20px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 68px;
+}
+
+/*
 .site-navigation li:first-child,
 .site-navigation li:nth-child(4) {
-  width: 240px;
+  
 }
 
 .site-navigation li:nth-child(2),
 .site-navigation li:nth-child(3) {
-  width: 288px;
+  /*width: 288px;
 }
-
+*/
 .site-navigation li:nth-child(3),
 .site-navigation li:nth-child(4) {
   text-align: right;
+  align-items: flex-end;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: 68px;
+}
+
+.site-navigation li:nth-child(4) {
+  margin-left: 20px;
 }
 
 .site-navigation a {
@@ -223,7 +263,8 @@ img {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
-  padding: 33px 110px 8px 110px; /*120*/
+  padding: 33px 110px 8px 110px;
+  /*120*/
 }
 
 .real-town .feature-description {
@@ -251,7 +292,7 @@ img {
 
 .features h2 {
   margin-top: 0;
-  padding: 48px 140px 10px 140px;
+  padding: 48px 130px 10px 130px;
   text-align: center;
 }
 
@@ -1028,7 +1069,8 @@ footer .tel {
 }
 
 .filter-form {
-  padding: 28px 72px 17px 72px;   /*не трогать, точно по пиксельно*/
+  padding: 28px 72px 17px 72px;
+  /*не трогать, точно по пиксельно*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1111,7 +1153,7 @@ input[type="range"] {
 
 .input-type-range {
   margin-top: 20px;
-  width: 300px;
+  width: 320px;
   height: 2px;
   background-color: #ababab;
   display: block;
@@ -1119,11 +1161,35 @@ input[type="range"] {
 }
 
 .input-type-range .bar {
-  width: 85%;
+  width: 80%;
   height: 2px;
   background-color: #ffffff;
 }
-
+.range-button-left::before {
+  display: block;
+  content: url("../img/filter-button.svg");
+  width: 20px;
+  height: 23px;
+  position: absolute;
+  top: -9px;
+  left: 1px;
+  cursor: pointer;
+}
+.range-button-left:hover::before,
+.range-button-right:hover::before {
+ transform: scale(1.1, 1.1);
+}
+.range-button-right::before {
+  display: block;
+  content: url("../img/filter-button.svg");
+  width: 20px;
+  height: 23px;
+  position: absolute;
+  top: -9px;
+  left: 75%;
+  cursor: pointer;
+}
+/*
 .range-button-left::before {
   display: block;
   content: "";
@@ -1171,7 +1237,7 @@ input[type="range"] {
   top: -10px;
   left: 251px;
 }
-
+*/
 .price-indicator .cost-per-day {
   padding-top: 0;
   text-align: left;
@@ -1236,11 +1302,14 @@ input[type="range"] {
   /*-webkit-box-align: center;
   -ms-flex-align: center;*/
   align-items: center;
-  padding: 18px 70px 19px 70px;    /*не трогать*/
+  padding: 18px 70px 19px 70px;
+  /*не трогать*/
 }
+
 .sort-list {
   padding-left: 0;
 }
+
 .sort .sort-list>li {
   display: inline;
   padding-top: 7px;
@@ -1254,16 +1323,19 @@ input[type="range"] {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .sort .label-sort,
 .sort-list li {
   font-size: 12px;
   line-height: 18px;
 }
+
 .label-sort {
   padding-top: 5px;
   padding-left: 50px;
   padding-right: 37px;
 }
+
 .sort li {
   padding-top: 2px;
   padding-right: 30px;
@@ -1335,7 +1407,8 @@ input[type="range"] {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  padding: 30px 70px 30px 72px;          /*не трогать*/
+  padding: 30px 70px 30px 72px;
+  /*не трогать*/
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1376,7 +1449,7 @@ input[type="range"] {
 .housing-type span,
 .booking-price span {
   text-align: left;
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .hotel-name:hover {
