@@ -235,7 +235,6 @@ img {
   font-weight: 700;
   line-height: 21px;
   padding: 33px 110px 8px 110px;
-  /*120*/
 }
 
 .real-town .feature-description {
@@ -941,7 +940,6 @@ footer .tel {
 }
 
 .social-list {
-  /*width: 150px;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1039,7 +1037,6 @@ footer .tel {
 
 .filter-form {
   padding: 28px 72px 17px 72px;
-  /*не трогать, точно по пиксельно*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1231,13 +1228,10 @@ input[type="range"] {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  /*-webkit-box-align: center;
-  -ms-flex-align: center;*/
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   padding: 18px 70px 19px 70px;
-  /*не трогать*/
 }
 
 .sort-list {
@@ -1247,7 +1241,6 @@ input[type="range"] {
 .sort .sort-list>li {
   display: inline;
   padding-top: 7px;
-  /*padding-left: 5px;*/
 }
 
 .sort p:first-child {
@@ -1342,7 +1335,6 @@ input[type="range"] {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 30px 70px 30px 72px;
-  /*не трогать*/
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1350,7 +1342,7 @@ input[type="range"] {
   border-top: 1px solid #e5e5e5;
 }
 
-.hotels-list img,
+
 .hotels-list .info-hotel,
 .hotels-list .rating {
   display: inline-block;
@@ -1367,9 +1359,11 @@ input[type="range"] {
   line-height: 26px;
   color: #000000;
   margin: 0 auto;
-  margin-bottom: 2px;
+  margin-bottom: 3px;
   text-align: left;
-  display: block;
+  letter-spacing: 0.3px;
+  position: relative;
+  top: -3px;
 }
 
 .housing-type,
@@ -1400,7 +1394,7 @@ input[type="range"] {
   line-height: 21px;
   color: #ffffff;
   text-align: center;
-  margin-top: 17px;
+  margin-top: 16px;
   display: block;
 }
 
