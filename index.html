@@ -6,11 +6,11 @@
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  
+
   <div class="page-wrapper">
 
     <header class="header-index">
@@ -82,7 +82,7 @@
           <div class="feature">
             <h2>Красивая дорога</h2>
             <span>— №4 —</span>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="feature-paragraph-size">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
 
           <div class="feature">
@@ -105,81 +105,81 @@
         <div class="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d838087.8993684136!2d-112.35492691930939!3d34.86173333140729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1582655972344!5m2!1sru!2sru"
-            style="width:1200px; height:593px; border:0;" allowfullscreen=""></iframe>
+            style="width:1200px; height:593px; border:0; margin:0px;" allowfullscreen=""></iframe>
         </div>
         <div class="search-form">
           <form action="https://echo.htmlacademy.ru" method="post" class="booking-form">
-            
-              <div class="checkin-container">
-                <label>дата заезда:</label>
-                <input class="checkin" type="text" name="date-checkin" value="24 АПРЕЛЯ 2017" required>
-                <button type="button" aria-label="Открыть календарь" class="calendar-button">
-                  <svg width="21px" height="22px" viewBox="0 0 21 22">
-                    <path
-                      d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+
+            <div class="checkin-container">
+              <label>дата заезда:</label>
+              <input class="checkin" type="text" name="date-checkin" value="24 АПРЕЛЯ 2017" required>
+              <button type="button" aria-label="Открыть календарь" class="calendar-button">
+                <svg width="21px" height="22px" viewBox="0 0 21 22">
+                  <path
+                    d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
             c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
             c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
             C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
             c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
             c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
             v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z" />
-                    <rect x="4.594" y="8.225" width="2.625" height="2.066" />
-                    <rect x="4.594" y="11.668" width="2.625" height="2.067" />
-                    <rect x="4.594" y="15.112" width="2.625" height="2.066" />
-                    <rect x="9.188" y="15.112" width="2.625" height="2.066" />
-                    <rect x="9.188" y="11.668" width="2.625" height="2.067" />
-                    <rect x="9.188" y="8.225" width="2.625" height="2.066" />
-                    <rect x="13.781" y="15.112" width="2.625" height="2.066" />
-                    <rect x="13.781" y="11.668" width="2.625" height="2.067" />
-                    <rect x="13.781" y="8.225" width="2.625" height="2.066" />
-                  </svg>
-                </button>
-              </div>
+                  <rect x="4.594" y="8.225" width="2.625" height="2.066" />
+                  <rect x="4.594" y="11.668" width="2.625" height="2.067" />
+                  <rect x="4.594" y="15.112" width="2.625" height="2.066" />
+                  <rect x="9.188" y="15.112" width="2.625" height="2.066" />
+                  <rect x="9.188" y="11.668" width="2.625" height="2.067" />
+                  <rect x="9.188" y="8.225" width="2.625" height="2.066" />
+                  <rect x="13.781" y="15.112" width="2.625" height="2.066" />
+                  <rect x="13.781" y="11.668" width="2.625" height="2.067" />
+                  <rect x="13.781" y="8.225" width="2.625" height="2.066" />
+                </svg>
+              </button>
+            </div>
 
-              <div class="checkout-container">
-                <label>дата выезда:</label>
-                <input class="checkout" type="text" name="date-checkout" value="4 ИЮЛЯ 2017" required>
-                <button type="button" aria-label="Открыть календарь" class="calendar-button">
-                  <svg width="21px" height="22px" viewBox="0 0 21 22">
-                    <path
-                      d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
+            <div class="checkout-container">
+              <label>дата выезда:</label>
+              <input class="checkout" type="text" name="date-checkout" value="4 ИЮЛЯ 2017" required>
+              <button type="button" aria-label="Открыть календарь" class="calendar-button">
+                <svg width="21px" height="22px" viewBox="0 0 21 22">
+                  <path
+                    d="M19.251,2.025h-2.845V0.648c0-0.381-0.294-0.689-0.656-0.689c-0.363,0-0.656,0.308-0.656,0.689v1.377h-3.938V0.648
             c0-0.381-0.294-0.689-0.655-0.689c-0.363,0-0.657,0.308-0.657,0.689v1.377H5.906V0.648c0-0.381-0.294-0.689-0.656-0.689
             c-0.363,0-0.657,0.308-0.657,0.689v1.377H1.75C0.784,2.025,0,2.847,0,3.862v16.302C0,21.179,0.784,22,1.75,22h17.501
             C20.217,22,21,21.179,21,20.164V3.862C21,2.847,20.217,2.025,19.251,2.025z M19.688,20.164c0,0.253-0.195,0.459-0.437,0.459H1.75
             c-0.241,0-0.438-0.206-0.438-0.459V3.862c0-0.253,0.196-0.459,0.438-0.459h2.844v1.378c0,0.381,0.294,0.689,0.657,0.689
             c0.362,0,0.656-0.308,0.656-0.689V3.403h3.938v1.378c0,0.381,0.294,0.689,0.657,0.689c0.361,0,0.655-0.308,0.655-0.689V3.403h3.938
             v1.378c0,0.381,0.293,0.689,0.656,0.689c0.362,0,0.656-0.308,0.656-0.689V3.403h2.845c0.241,0,0.437,0.206,0.437,0.459V20.164z" />
-                    <rect x="4.594" y="8.225" width="2.625" height="2.066" />
-                    <rect x="4.594" y="11.668" width="2.625" height="2.067" />
-                    <rect x="4.594" y="15.112" width="2.625" height="2.066" />
-                    <rect x="9.188" y="15.112" width="2.625" height="2.066" />
-                    <rect x="9.188" y="11.668" width="2.625" height="2.067" />
-                    <rect x="9.188" y="8.225" width="2.625" height="2.066" />
-                    <rect x="13.781" y="15.112" width="2.625" height="2.066" />
-                    <rect x="13.781" y="11.668" width="2.625" height="2.067" />
-                    <rect x="13.781" y="8.225" width="2.625" height="2.066" />
-                  </svg>
-                </button>
+                  <rect x="4.594" y="8.225" width="2.625" height="2.066" />
+                  <rect x="4.594" y="11.668" width="2.625" height="2.067" />
+                  <rect x="4.594" y="15.112" width="2.625" height="2.066" />
+                  <rect x="9.188" y="15.112" width="2.625" height="2.066" />
+                  <rect x="9.188" y="11.668" width="2.625" height="2.067" />
+                  <rect x="9.188" y="8.225" width="2.625" height="2.066" />
+                  <rect x="13.781" y="15.112" width="2.625" height="2.066" />
+                  <rect x="13.781" y="11.668" width="2.625" height="2.067" />
+                  <rect x="13.781" y="8.225" width="2.625" height="2.066" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="number-container">
+
+              <div class="adults-container">
+                <label>взрослые:</label>
+                <button type="button" aria-label="количество взрослых -1" class="button-minus"></button>
+                <input type="number" name="adultsNumber" value="0">
+                <button type="button" aria-label="количество взрослых +1" class="button-plus"></button>
               </div>
 
-              <div class="number-container">
-
-                <div class="adults-container">
-                  <label>взрослые:</label>
-                  <button type="button" aria-label="количество взрослых -1" class="button-minus"></button>
-                  <input type="number" name="adultsNumber" value="0">
-                  <button type="button" aria-label="количество взрослых +1" class="button-plus"></button>
-                </div>
-
-                <div class="children-container">
-                  <label>дети:</label>
-                  <button type="button" aria-label="количество детей -1" class="button-minus"></button>
-                  <input type="number" name="childrenNumber" value="0">
-                  <button type="button" aria-label="количество детей +1" class="button-plus"></button>
-                </div>
-
+              <div class="children-container">
+                <label>дети:</label>
+                <button type="button" aria-label="количество детей -1" class="button-minus"></button>
+                <input type="number" name="childrenNumber" value="0">
+                <button type="button" aria-label="количество детей +1" class="button-plus"></button>
               </div>
-            
+
+            </div>
+
 
             <button type="submit" class="button sendform-button">Найти</button>
           </form>
