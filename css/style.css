@@ -923,6 +923,10 @@ input::-webkit-inner-spin-button {
   letter-spacing: 0.2px;
 }
 
+.housing-type legend {
+  letter-spacing: 0.005px;
+}
+
 .filter .infrastructure,
 .filter .housing-type {
   border: none;
@@ -958,8 +962,8 @@ input::-webkit-inner-spin-button {
   position: relative;
 }
 
-.infrastructure input:checked+label::before,
-.housing-type input:checked+label::before {
+.infrastructure-input:checked+label::before,
+.housing-type-input:checked+label::before {
   content: url("../img/checkbox-on.svg");
   margin-right: 12px;
   margin-left: 15px;
@@ -978,8 +982,8 @@ input::-webkit-inner-spin-button {
   left: -15px;
 }
 
-.infrastructure input:disabled+label::before,
-.housing-type input:disabled+label::before {
+.infrastructure-input:disabled+label::before,
+.housing-type-input:disabled+label::before {
   -webkit-filter: brightness(0) opacity(0.2);
   filter: brightness(0) opacity(0.2);
 }
@@ -1167,6 +1171,7 @@ input::-webkit-inner-spin-button {
 .sort-list .current {
   color: #81b3d2;
   border-bottom: none;
+  padding-left: 2px;
 }
 
 .sort-pointer svg {
