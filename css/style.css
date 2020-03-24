@@ -427,14 +427,20 @@ img {
   font-weight: 700;
 }
 
-.checkin-container label,
-.checkout-container label {
+.checkin-container label {
   width: 112px;
   text-align: left;
+  letter-spacing: 0.03em;
 }
 
-.checkin-container label {
-  letter-spacing: 0.55px;
+.checkout-container label {
+  width: 114px;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+
+.checkout-container label {
+  letter-spacing: 0.03em;
 }
 
 .adults-container label {
